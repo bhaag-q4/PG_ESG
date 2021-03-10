@@ -1,7 +1,7 @@
 {
-  "name": "sass-starter",
+  "name": "pg_pages",
   "version": "0.0.1",
-  "description": "Basic Sass outline with SMACSS architecture.",
+  "description": "ESG pages for P&G",
   "main": "gulpfile.js",
   "scripts": {
     "html": "cpx \"*.html\" dist/",
