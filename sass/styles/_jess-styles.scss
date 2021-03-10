@@ -1,0 +1,26 @@
+#irwWrapper .module-environmental_message {
+    .container {
+        max-width: 1000px
+    }
+    .module-title {
+        margin-bottom: 20px;
+    }
+    .person-info {
+        text-align: center;
+        
+        img {
+            max-width: 100%;
+        };
+
+        h4 {
+            color: $blue;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 26px;
+            margin-top: 28px;
+        }
+    }
+    .virginie-message {
+        padding: 50px 0 0 50px;
+    }
+} 

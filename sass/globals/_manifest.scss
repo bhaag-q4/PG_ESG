@@ -19,3 +19,8 @@ $xl: 1200px;
     text-transform: uppercase;
     color: $blue;
 }
+
+#irwWrapper .module-title::after {
+    content: ".";
+    color: #ffdb00;
+}
