@@ -2,6 +2,7 @@
 $blue: #003da6;
 $green: #246d38;
 $white: #FFFFFF;
+$grey: #F6F6F6;
 
 // breakpoints
 $sm: 576px;
@@ -10,7 +11,7 @@ $lg: 992px;
 $xl: 1200px;
 
 //headers
-#irwWrapper .module-title {
+#irwWrapper .esg-module-title{
     font-style: normal;
     font-weight: 900;
     font-size: 34px;
