@@ -1,0 +1,156 @@
+#irwWrapper {
+    .good-governance {
+        .debbie-section {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 0px 100px;
+
+
+            .esg-module-title {
+                padding-bottom: 25px;
+            }
+
+            .debbie-section_name {
+                color: $blue;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                text-align: center;
+                margin-top: 28px;
+            }
+
+            .debbie-section_title {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            .debbie-section_blurb {
+                font-size: 16px;
+                line-height: 26px;
+                padding-top: 20px;
+            }
+
+            .debbie-section_portrait {
+                max-width: 100%;
+            }
+
+            @media (max-width: $sm) {
+                .debbie-section_portrait {
+                    margin: auto;
+                    display: block;
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+    .commitment {
+        max-width: 1100px;
+        margin: auto;
+        padding: 80px 0px;
+
+        .commitment_blurb {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 65px;
+        }
+
+        .governance-highlights {
+            @media (min-width: $lg) {
+                .governance-highlights_item {
+                    width: 32.333333%;
+                }
+            }
+
+            .governance-highlights_tab-container {
+                margin: 50px 0px;
+            }
+
+            .governance-highlights_title {
+                color: $blue;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            .governance-highlights_item {
+                margin-bottom: 40px;
+            }
+
+            .governance-highlights_item-title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #003da7;
+            }
+
+            .governance-highlights_item-point-text {
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 20px;
+                position: relative;
+                padding-left: 20px;
+                display: inline-block;
+            }
+
+            .governance-highlights_item-point {
+                margin-bottom: 20px;
+            }
+
+            .governance-highlights_angle-right {
+                color: blue;
+                position: absolute;
+                font-size: 23px;
+                top: 0px;
+            }
+
+            .governance-highlights_tab {
+                font-weight: 600;
+                font-size: 17.28px;
+                line-height: 19px;
+                text-align: center;
+                margin: auto;
+                color: $blue;
+                padding: 10px 20px;
+                border: 2px solid $blue;
+            }
+        }
+    }
+    .shareholder-engagement {
+        max-width: 1100px;
+        margin: auto;
+        padding: 100px 0px 150px;
+
+        .shareholder-engagement_title::after {
+            content: ".";
+            color: #ffdb00;
+        }
+
+        .shareholder-engagement_title {
+            font-weight: 900;
+            font-size: 34px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: $blue;
+        }
+
+        .shareholder-engagement .image-container {
+            padding-top: 20px;
+        }
+
+        @media (max-width: $sm) {
+            .shareholder-engagement img {
+                max-width: 90%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.PageESGGovernanceOurCommitmenttoGoodGovernance #irwWrapper {
+    padding: 0px;
+}
