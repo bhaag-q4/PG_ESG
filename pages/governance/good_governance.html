@@ -1,0 +1,165 @@
+<div class="good-governance">
+    <div class="debbie-section">
+        <h2 class="esg-module-title">Message From Debbie Majoras</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="image-container">
+                    <img class="debbie-section_portrait" src="/files/images/esg/Debbie_Majoras.png"
+                        alt="Debbie Majoras">
+                </div>
+                <p class="debbie-section_name">
+                    Debbie Majoras
+                </p>
+                <p class="debbie-section_title">Chief Legal Officer
+                    and Secretary</p>
+            </div>
+
+            <div class="debbie-section_blurb col-xs-12 col-sm-8">
+                When we first established our Citizenship focus areas several years ago, we included Ethics & Corporate
+                Responsibility as a separate focus. But what became clear over time is that Ethics & Corporate
+                Responsibility is the foundation for all our citizenship work — the base from which it all builds —
+                rather than a separate focus area. From long experience, we know that a sustainably strong business
+                depends on maintaining strong ethical, compliance and quality standards. It is equally true that for all
+                our citizenship work to be credible and impactful, it must be firmly rooted in our Purpose, Values and
+                Principles.
+            </div>
+        </div>
+    </div>
+
+    <div class="grey-background">
+
+        <div class="commitment">
+            <h2 class="esg-module-title">Our Commitment to Good Governance.</h2>
+            <div class="commitment_blurb">
+                We believe that strong governance practices contribute to better results for shareholders. We maintain
+                governance principles, policies and practices that support Board and management accountability and serve
+                the
+                best interests of our Company, our shareholders, and our many stakeholders. We also promote good
+                governance
+                through our public support of Commonsense Principles 2.0 and our compliance with the Corporate
+                Governance
+                Principles of the Investor Stewardship Group
+            </div>
+
+            <div id="governance-highlights" class="governance-highlights">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shareholder-engagement">
+        <div class="row">
+
+        </div>
+        <div class="col-xs-12 col-md-7">
+            <h2 class="shareholder-engagement_title">
+                Shareholder Engagement
+            </h2>
+            <div class="shareholder-engagement_blurb">
+                We value our relationships with all our shareholders. Engagement builds mutual understanding and a basis
+                for progress, and the input we receive from them impacts and informs our corporate practices. The
+                Company’s top 100 institutional shareholders collectively own over 50% of the Company’s outstanding
+                shares of common stock, and we generally focus our proactive shareholder outreach efforts on these
+                shareholders. These engagements have included members of our senior management, investor relations team,
+                and subject matter experts from the Company, as well as Directors. We also solicit off-cycle, follow-up
+                engagements where we believe further discussion and feedback on our actions would be beneficial. Our
+                team is available via investor relations contact and CSO contact.
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+            <div class="image-container">
+                <img src="/files/images/esg/shareholder_engagement.png" alt="Shareholder Engagement">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    highlightsTemplate = (
+        /* beautify preserve:start */
+        // @formatter:off
+        '<h3 class="governance-highlights_title"> ' +
+            'Corporate Governance Highlights ' +
+        '</h3> ' +
+        '<div class="governance-highlights_tab-container"> ' +
+            '<div class="row"> ' +
+                '{{#.}}' +
+                    '<div class="col-xs-12 col-sm-4"> ' +
+                        '<button class="governance-highlights_tab"> ' +
+                            '{{title}}' +
+                        '</button> ' +
+                    '</div> ' +
+                '{{/.}}' +
+            '</div> ' +
+        '</div> ' +
+        '<div class="row"> ' +
+            '{{#.}}{{#items}}' +
+                '<div class="governance-highlights_item col-xs-12 col-md-4"> ' +
+                    '<h4 class="governance-highlights_item-title"> ' +
+                        '{{title}}' +
+                    '</h4> ' +
+                    '{{#points}}' +
+                        '<div class="governance-highlights_item-point"> ' +
+                            '<span class="governance-highlights_angle-right fa fa-angle-right"></span> ' +
+                            '<span class="governance-highlights_item-point-text"> ' +
+                                '{{.}} ' +
+                            '</span> ' +
+                        '</div> ' +
+                    '{{/points}}' +
+                '</div> ' +
+            '{{/items}}{{/.}}' +
+        '</div> '
+        // @formatter:on
+        /* beautify preserve:end */
+    );
+
+    var highlightsData = [{
+        title: "Board Structure & Composition",
+        items: [{
+            title: "Director Independence",
+            points: [
+                "11 of 12 Director nominees are independent",
+                "Four fully independent Board Committees",
+            ],
+        }, {
+            title: "Board Leadership",
+            points: [
+                "Annual assessment and determination of Board leadership structure",
+                "Annual election of independent Lead Director if Chairman/CEO roles are combined or the Chairman is not independent",
+                "Lead Director has strong role and significant governance duties, including chairing regular executive sessions of independent Directors",
+            ],
+        }, {
+            title: "Board Refreshment & Diversity",
+            points: [
+                "Balance of new and experienced Directors. More than 50% of Director nominees have tenures of less than 6 years and average tenure is less than 7 years",
+                "Retirement age and term limit for Directors",
+                "7 of 12 Director nominees are women and/or ethnically diverse",
+                "Average age of Director nominees is 65",
+            ],
+        }, {
+            title: "Evaluation & Effectiveness",
+            points: [
+                "Annual Board and Committee self-assessments",
+                "One-on-one reviews with individual Directors to ensure thoughtful, candid feedback",
+                "Annual independent Director evaluation of Chairman and CEO and continuous Director feedback",
+            ],
+        }, {
+            title: "Director Engagement",
+            points: [
+                "Directors attended more than 95% of Board and Committee meetings in FY 2019-20",
+                "Board policy limits Director membership on other public company boards",
+            ],
+        }, {
+            title: "Director Access",
+            points: [
+                "Directors have significant interaction with senior business leaders and access to other employees",
+                "Directors have ability to hire outside experts and consultants and to conduct independent investigations",
+                "Directors participate in focused sessions on emerging topics and visits to strategic Company operations globally",
+            ],
+        }]
+    }, ];
+    var rendered = Mustache.render(highlightsTemplate, highlightsData);
+
+    document.getElementById('governance-highlights').innerHTML = rendered;
+</script>
