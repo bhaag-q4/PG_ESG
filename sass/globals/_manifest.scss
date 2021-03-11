@@ -24,3 +24,104 @@ $xl: 1200px;
     content: ".";
     color: #ffdb00;
 }
+
+// common elements
+.section--esg {
+    #irwWrapper h4 {
+        color: $blue;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: 28px;
+    }
+
+    #irwWrapper .container--narrow {
+        max-width: 1000px
+    }
+
+    #irwWrapper .btn-default {
+        border-width: 2px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 1em 1.5em;
+        border-radius: 2em;
+
+    }
+
+    #irwWrapper .custom-ul {
+        padding: 0;
+        margin: 0 0 1em;
+        li {
+            list-style: none;
+            position: relative;
+            padding-left: 2em;
+            &::before {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-size: 1.5em;
+                content: "\f105";
+                color: $blue;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+    #irwWrapper .tbl-goals {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: 50px 0;
+        background: $white;
+        div[role="row"] {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            & + div[role="row"] {
+                .tbl-goals_label {
+                    border-left: 1px solid $white;
+                }
+                .tbl-goals_value {
+                    border-left: none;
+                }
+            }
+        }
+        &_label {
+            background-color: $blue;
+            // border: 1px solid $blue;
+            color: $white;
+            font-size: 24px;
+            padding: 0.8rem 1rem;
+            text-align: center;
+        }
+        &_value {
+            padding: 1rem;
+            border: 1px solid $blue;
+            flex-grow: 1;
+        }
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+
+            div[role="row"]  {
+                max-width: 100%;
+
+                & + div[role="row"] {
+                    .tbl-goals_label {
+                        border-left: none;
+                    }
+                    .tbl-goals_value {
+                        border-left: 1px solid $blue;
+                    }
+                }
+            }
+        }
+    }
+}
