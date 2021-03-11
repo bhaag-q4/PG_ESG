@@ -20,4 +20,18 @@
     .virginie-message {
         padding: 50px 0 0 50px;
     }
-} 
+}
+
+#irwWrapper .module-partnerships {
+    .title--arrow {
+        margin: 2em 0 1em;
+    }
+    .btn {
+        margin-top: 4rem;
+    }
+    @media (min-width: $lg) {
+        .col-md-6 {
+            padding: 0 5rem;
+        }
+    }
+}
