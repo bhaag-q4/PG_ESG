@@ -1,0 +1,134 @@
+<div class="board-composition">
+    <div class="board-composition-summary">
+        <div class="board-composition-summary_title">
+            Board Composition
+        </div>
+        <div class="board-composition-summary_blurb">
+            As a global, diverse consumer products company, we strive to reflect the diversity of our workforce and
+            our consumers in our boardroom. Not only do our Directors bring to the Board significant and varied
+            leadership skills and experiences, they represent a mix of background, age, gender, race and life
+            experience that informs their leadership and strengthens their oversight.
+        </div>
+        <div class="board-composition-summary_chart-section">
+            <div class="board-composition-summary_chart">
+                <img src="/files/images/esg/6_12_graph.svg" alt="6 out of 12">
+                <p class="board-composition-summary_ratio"><strong>6/12 (50%)</strong></p>
+                <p>Members are women</p>
+            </div>
+            <div class="board-composition-summary_chart">
+                <img src="/files/images/esg/3_12_graph.svg" alt="3 out of 12">
+                <p class="board-composition-summary_ratio"><strong>3/12 (25%)</strong></p>
+                <p>members are ethnically diverse</p>
+            </div>
+            <div class="board-composition-summary_chart">
+                <img src="/files/images/esg/7_12_graph.svg" alt="7 out of 12">
+                <p class="board-composition-summary_ratio"><strong>7/12 (58%)</strong></p>
+                <p> members have served fewer than six years, with average tenure of about seven years</p>
+            </div>
+            <div class="board-composition-summary_chart">
+                <img src="/files/images/esg/4_12_graph.svg" alt="4 out of 12">
+                <p class="board-composition-summary_ratio"><strong>4/12 (33%)</strong></p>
+                <p>members joined within the last three years</p>
+            </div>
+            <div class="board-composition-summary_chart">
+                <img src="/files/images/esg/8_12_graph.svg" alt="8 out of 12">
+                <p class="board-composition-summary_ratio"><strong>8/12 (67%)</strong></p>
+                <p>members are current or former public company CEOs</p>
+            </div>
+        </div>
+        <div class="board-composition-summary_read-more-container">
+            <a class="board-composition-summary_read-more">You can read more about our current Directors here</a>
+        </div>
+    </div>
+
+    <div class="grey-background">
+        <div class="board-leadership">
+            <div class="board-composition-summary_title">
+                Board Leadership
+            </div>
+            <div class="board-leadership_blurb">
+                <p>
+                    The Company’s Board retains discretion to determine whether the same individual should serve as both
+                    Chief Executive Officer (“CEO”) and Chairman of the Board or whether the roles should be separated.
+                    This
+                    approach allows the Board to use its considerable experience and knowledge to elect the most
+                    qualified
+                    Director as Chairman of the Board, while maintaining the ability to separate the Chairman of the
+                    Board
+                    and CEO roles when appropriate, as the roles have been in previous periods.
+                </p>
+                <p>
+                    The Board regularly considers this discretionary structure and whether to combine or separate the
+                    roles,
+                    depending on which leadership structure best serves the Company and its shareholders. The Board
+                    believes
+                    this discretion, including the flexibility to make this determination at any given point, best
+                    enables
+                    it to promote the long-term interests of the Company and its shareholders.
+                </p>
+                <p class="board-leadership_blurb--blue">
+                    When the Board determines that the same individual should hold the positions of CEO and Chairman of
+                    the
+                    Board or if the Chairman of the Board is not independent, the independent Directors of the Board
+                    elect
+                    for an annual term a Lead Director from among the independent Directors. The Lead Director role is
+                    significant, with responsibilities consistent with accepted best practices, including:
+                </p>
+            </div>
+
+            <div id="board-leadership_responsibilities-container" class="board-leadership_responsibilities-container">
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    leadershipTemplate = (
+        /* beautify preserve:start */
+        // @formatter:off
+            '<div class="row"> ' +
+                '{{#.}}' +
+                    '<div class="col-xs-12 col-md-4"> ' +
+                        '{{#.}}' +
+                            '<div class="board-leadership_responsibility-item">' +
+                                '<span class="board-leadership_responsibility_angle-right fa fa-angle-right"></span> ' +
+                                '<span class="board-leadership_responsibility_item-text"> ' +
+                                    '{{.}} ' +
+                                '</span> ' +
+                            '</div>' +
+                        '{{/.}}' +
+                    '</div> ' +
+                '{{/.}}' +
+            '</div> '
+        // @formatter:on
+        /* beautify preserve:end */
+    );
+
+    var leadershipData = [
+        [
+            'preside at all meetings of the Board in the absence of, or upon the request of, the Chairman of the Board;',
+            'lead regular executive sessions of the independent Directors;',
+            'provide input to and approve agendas for the Board meetings and information sent to the Board;',
+            'approve meeting schedules to assure sufficient time for discussion of all agenda items;',
+            'call special meetings of the Board as necessary to address important or urgent Company issues;',
+        ],
+        [
+            'call meetings of the non-employee and/or independent Directors, with appropriate notice;',
+            'advise the G&PR Committee and the Chairman of the Board on the membership of the various Board committees and the selection of committee chairpersons;',
+            'advise the Chairman of the Board on the retention of advisors and consultants who report directly to the Board;',
+            'advise the Chairman of the Board and CEO, as appropriate, on issues discussed at executive sessions of non-employee and/or independent Directors;',
+        ],
+        [
+            'review with the CEO the non-employee Directors’ annual evaluation of the CEO’s performance;',
+            'serve as principal liaison between the non-employee and/or independent Directors, as a group, and the Chairman of the Board and CEO, as necessary;',
+            'serve when necessary and appropriate, after consultation with the Chairman of the Board and CEO, as the liaison between the Board and the Company’s shareholders; and',
+            'select an interim Lead Director to preside over meetings at which he or she cannot be present.',
+        ]
+    ];
+    var rendered = Mustache.render(leadershipTemplate, leadershipData);
+
+    document.getElementById('board-leadership_responsibilities-container').innerHTML = rendered;
+</script>
