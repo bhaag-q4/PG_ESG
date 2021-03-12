@@ -34,10 +34,13 @@ $xl: 1200px;
     background-color: $grey;
 }
 
-
-
 // common elements
 .section--esg {
+    #irwWrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     #irwWrapper h4 {
         color: $blue;
         font-weight: 600;
@@ -60,7 +63,7 @@ $xl: 1200px;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             font-family: FontAwesome;
-            font-size: 1.5em;
+            font-size: 1.25em;
             content: "\f105";
             margin-left: 0.25em;
             top: 2px;
