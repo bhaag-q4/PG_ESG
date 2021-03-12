@@ -1,0 +1,75 @@
+<div class="governance-policies">
+    <h2 class="oversight-of-risk_title">
+        Board Oversight of Risk
+    </h2>
+    <div id="governance-policies_policy-container" class="governance-policies_policy-container row">
+
+    </div>
+</div>
+
+<script>
+    policyTemplate = (
+        /* beautify preserve:start */
+        // @formatter:off
+                '{{#.}}' +
+                    '<div class="col-xs-12 col-md-6"> ' +
+                        '{{#.}}' +
+                            '<div class="governance-policy-item">' +
+                                '<p class="governance-policy_item-title"> ' +
+                                    '{{title}} <span class="governance-policy_angle-right fa fa-arrow-right"></span>' +
+                                '</p> ' +
+                                '<p class="governance-policy_item-blurb"> ' +
+                                    '{{blurb}} ' +
+                                '</p> ' +
+                            '</div>' +
+                        '{{/.}}' +
+                    '</div> ' +
+                '{{/.}}'
+        // @formatter:on
+        /* beautify preserve:end */
+    );
+
+    var policyData = [
+        [{
+                title: "Corporate Governance Guidelines",
+                blurb: "The Board of Directors has adopted these guidelines to set forth its commitments and guiding principles concerning overall governance practices.",
+            },
+            {
+                title: "Related Person Transaction Policy",
+                blurb: "This policy prohibits any of the Company’s executive officers, Directors or any of their immediate family members from entering into a transaction with the Company, except in accordance with this policy.",
+            },
+            {
+                title: "Our Political Involvement",
+                blurb: "Provides an overview of the Company’s lobbying activity and the Company’s political action committee, The P&G Good Government Fund.",
+            },
+            {
+                title: "Articles of Incorporation",
+                blurb: "",
+            },
+            {
+                title: "Corporate Structure",
+                blurb: "",
+            },
+        ],
+        [{
+                title: "Board Guidelines for Determining the Independence of Its Members",
+                blurb: "The Board has adopted guidelines to determine the independence of its members. The Independence Guidelines are included in the Corporate Governance Guidelines as Appendix A but are separately provided here for ease of reference.",
+            },
+            {
+                title: "Worldwide Business Conduct Manual",
+                blurb: "Our Worldwide Business Conduct Manual contains the global standards that must be followed to ensure we uphold P&G’s Purpose, Values and Principles in our daily work. The WCBM applies to all of the Company’s employees, officers and non-employee directors. We also expect our suppliers and other business partners to comply with all relevant portions of the manual. Portions of the Worldwide Business Conduct Manual comprise P&G’s Code of Ethics for SEC and New York Stock Exchange Regulatory Purposes, as further described in the Manual.",
+            },
+            {
+                title: "Code of Regulations",
+                blurb: "",
+            },
+            {
+                title: "Tax Principles",
+                blurb: "",
+            },
+        ]
+    ];
+    var rendered = Mustache.render(policyTemplate, policyData);
+
+    document.getElementById('governance-policies_policy-container').innerHTML = rendered;
+</script>
