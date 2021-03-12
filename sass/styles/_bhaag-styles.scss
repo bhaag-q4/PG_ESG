@@ -1,5 +1,6 @@
 #irwWrapper {
     .board-composition {
+
         .board-composition-summary {
             padding: 0px 15px;
             .board-composition-summary_title {
@@ -123,6 +124,110 @@
                 margin-left: 20px;
                 display: inline-block;
             }
+        }
+    }
+
+    .risk-oversight {
+        padding: 0px 15px;
+        
+        .board-oversight {
+            .board-oversight_title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                color: $blue;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            .board-oversight_blurb {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                max-width: 870px;
+                margin: auto;
+                padding-bottom: 15px;
+            }
+
+            .board-oversight_blurb--blue {
+                font-weight: 600;
+                color: $blue2;
+                max-width: 950px;
+            }
+
+            .board-oversight_list {
+                padding: 40px 0px 45px;
+                max-width: 1100px;
+                margin: auto;
+            }
+
+            .board-oversight-item {
+                position: relative;
+                padding-bottom: 20px;
+            }
+
+            .board-oversight_angle-right {
+                font-size: 25px;
+                position: absolute;
+                color: $blue;
+            }
+
+            .board-oversight_item-text {
+                display: inline-block;
+                margin-left: 25px;
+            }
+        }
+
+        .approach-text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            color: $blue;
+            max-width: 870px;
+            margin: auto;
+        }
+
+        .committee-list {
+            max-width: 1100px;
+            margin: auto;
+            padding: 45px 0px 35px;
+        }
+
+        .committee-list_item {
+            margin-bottom: 40px;
+        }
+
+        .committee-list_item-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: $blue;
+            margin-bottom: 15px;
+        }
+
+        .committee-list_item-blurb {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 20px;
+        }
+
+        .committee-list_item-link {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 26px;
+        }
+
+        .committee-list_item-arrow {
+            font-weight: 400;
+        }
+
+        .risk-oversite_end-text {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            max-width: 950px;
+            margin: auto;
         }
     }
 }
