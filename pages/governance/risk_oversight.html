@@ -1,0 +1,129 @@
+<div class="risk-oversight">
+    <div class="board-oversight">
+        <h2 class="board-oversight_title">
+            Board Oversight of Risk
+        </h2>
+        <div class="board-oversight_blurb">
+            The Company’s senior management has the responsibility to develop and implement the Company’s strategic
+            plans and to identify, evaluate, manage, and mitigate the risks inherent in those plans. It is the
+            responsibility of the Board to oversee the development and execution of the Company’s strategic plans and to
+            understand the associated risks and the steps that senior management is taking to manage and mitigate those
+            risks. The Board takes an active approach to its role in overseeing the development and execution of the
+            Company’s business strategies as well as its risk oversight role.
+        </div>
+        <div class="board-oversight_blurb board-oversight_blurb--blue">
+            As part of its strategic risk management oversight, the full Board conducts a number of reviews throughout
+            the year to ensure that the Company’s strategy and risk management is appropriate and prudent, including:
+        </div>
+
+        <div id="board-oversight_list" class="board-oversight_list">
+
+        </div>
+    </div>
+
+    <h2 class="approach-text">
+        This approach is bolstered by the Board’s leadership and Committee structure, which ensures the full Board
+        properly considers and evaluates potential enterprise risks under the auspices of the Chairman of the Board
+        and Lead Director, and further considers and evaluates certain risks at the Committee level.
+    </h2>
+
+    <div class="committee-list row">
+        <div class="committee-list_item col-xs-12 col-md-6">
+            <p class="committee-list_item-title">
+                Audit Committee
+            </p>
+            <p class="committee-list_item-blurb">
+                Oversees the Company’s overall risk management process, including financial controls and integrity and
+                meets regularly with the chief ethics and compliance officer, reviewing key enterprise risks and
+                cybersecurity programs.
+            </p>
+            <a class="committee-list_item-link" href="">View Audit Committee Charter <span
+                    class="committee-list_item-arrow fa fa-arrow-right"></span></a>
+        </div>
+        <div class="committee-list_item col-xs-12 col-md-6">
+            <p class="committee-list_item-title">
+                Compensation & Leadership Development Committee
+            </p>
+            <p class="committee-list_item-blurb">
+                Oversees the development and succession planning of the Company’s CEO and other executive officers,
+                monitors gender pay equity, reviews organizational equality and inclusion programs and progress and
+                ensures our executive compensation practices are balanced in rewarding holistic, long-term growth.
+            </p>
+            <a class="committee-list_item-link" href="">View Compensation & Leadership Committee Charter <span
+                    class="committee-list_item-arrow fa fa-arrow-right"></span></a>
+        </div>
+        <div class="committee-list_item col-xs-12 col-md-6">
+            <p class="committee-list_item-title">
+                Governance & Public Responsibility Committee
+            </p>
+            <p class="committee-list_item-blurb">
+                Oversees matters related to the Company’s corporate governance practices and policies, including
+                Board composition, Director succession planning
+                and independence and oversees the Company’s
+                geo-political risks and community and environmental impact, assessing our practices and progress against
+                key benchmarks.
+            </p>
+            <a class="committee-list_item-link" href="">View Governance & Public Response Committee Charter <span
+                    class="committee-list_item-arrow fa fa-arrow-right"></span></a>
+        </div>
+        <div class="committee-list_item col-xs-12 col-md-6">
+            <p class="committee-list_item-title">
+                Innovation & Technology Committee
+            </p>
+            <p class="committee-list_item-blurb">
+                Oversees the Company’s innovation and technology programs, including the responsible integration
+                of new technology into our innovation strategy,
+                while also considering how these programs incorporate the Company’s sustainability and ingredient safety
+                priorities.
+            </p>
+            <a class="committee-list_item-link" href="">View Innovation & Technology Committee Charter <span
+                    class="committee-list_item-arrow fa fa-arrow-right"></span></a>
+        </div>
+    </div>
+    <p class="risk-oversite_end-text">
+        This broad scope of Board and Committee oversight and the resulting active engagement of our Directors help
+        ensure that our Company’s values, our leadership’s behaviors and
+        our employees’ efforts are ultimately linked to our Company strategy in a meaningful
+        and effective way.
+    </p>
+</div>
+
+<script>
+    oversightTemplate = (
+        /* beautify preserve:start */
+        // @formatter:off
+            '<div class="row"> ' +
+                '{{#.}}' +
+                    '<div class="col-xs-12 col-md-6"> ' +
+                        '{{#.}}' +
+                            '<div class="board-oversight-item">' +
+                                '<span class="board-oversight_angle-right fa fa-angle-right"></span> ' +
+                                '<span class="board-oversight_item-text"> ' +
+                                    '{{.}} ' +
+                                '</span> ' +
+                            '</div>' +
+                        '{{/.}}' +
+                    '</div> ' +
+                '{{/.}}' +
+            '</div> '
+        // @formatter:on
+        /* beautify preserve:end */
+    );
+
+    var oversightData = [
+        [
+            'A comprehensive annual review of the Company’s overall strategic plan, with updates throughout the year.',
+            'Direct discussions with the Chairman and CEO, in semi-executive sessions held at six Board meetings, about the state of the business. ',
+            'Reviews of the strategic plans and results for the Company’s business sectors, including the risks associated with these strategic plans, at Board meetings during the year.',
+            'Reviews of other strategic focus areas for the Company, such as innovation, information security, and human capital management.',
+            'As discussed more fully below, the Board also has overall responsibility for leadership succession planning for the Company’s most senior officers, including the CEO, and reviews succession plans on an ongoing basis.',
+        ],
+        [
+            'Annual review of the Company’s key legal and compliance risks, including mitigation strategies and compliance priorities.',
+            'Annual review of the conclusions and recommendations generated by management’s enterprise risk management (ERM) process, including review of the effectiveness of the ERM process in addressing and mitigating risks previously identified. This process involves a cross-functional group of the Company’s senior management, which identifies on a continual basis current and future potential risks facing the Company, partnering with Global Internal Audit, business leaders, and other governance organizations on actions to appropriately manage and mitigate those potential risks. In conjunction with the Company’s enterprise risk management process, management also maintains an information and operational technology risk management program, which analyzes emerging cybersecurity threats as well as the Company’s plans and strategies to address them.',
+        ]
+    ];
+    var rendered = Mustache.render(oversightTemplate, oversightData);
+
+    document.getElementById('board-oversight_list').innerHTML = rendered;
+</script>
