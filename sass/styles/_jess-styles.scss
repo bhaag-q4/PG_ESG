@@ -35,3 +35,102 @@
         }
     }
 }
+
+#irwWrapper .module-forestry_overview {
+    .container {
+        max-width: 1200px;
+    }
+    .perspective-row {
+        > div[class*="col"] {
+            margin-top: -1.5rem;
+        }
+        h4 {
+            margin: 2em 0 1.25em;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        @media (min-width: $lg) {
+
+        }
+
+        @media (max-width: $lg) {
+            > div[class*="col"] {
+                margin-top: 0;
+            }
+
+            .image-container {
+                text-align: center;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .box--blue {
+        background-color: $blue--light;
+        padding: 2rem 3rem;
+        margin: 3rem 0;
+
+        h4 {
+            margin-bottom: 1.5em;
+        }
+
+        .custom-ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            > li {
+                max-width: calc(50% - 1.5em);
+                width: 100%;
+                margin-left: 1.5em;
+                margin-bottom: 2em;
+                padding-left: 1.5em;
+
+                &.has-image {
+                    padding-right: 215px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+
+                &:last-child {
+                    max-width: 365px;
+                }
+            }
+        }
+        
+        @media (max-width: $lg) {
+            .custom-ul > li {
+                max-width: 100% !important;
+            }
+        }
+        @media (max-width: $md) {
+            .custom-ul > li.has-image {
+                padding-right: 0;
+
+                img {
+                    position: static;
+                    display: block;
+                    margin-top: 0.5em;
+                }
+            }
+        }
+        @media (max-width: $sm) {
+            padding: 2rem;
+        }
+    }
+
+    .efforts-row {
+        margin-bottom: 3rem;
+
+        .text-center {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+}

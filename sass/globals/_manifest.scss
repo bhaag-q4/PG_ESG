@@ -1,5 +1,6 @@
 // colors
 $blue: #003da6;
+$blue--light: #E1F4F8;
 $green: #246d38;
 $white: #FFFFFF;
 $grey: #F6F6F6;
@@ -100,6 +101,43 @@ $xl: 1200px;
                 position: absolute;
                 left: 0;
                 top: 0;
+            }
+        }
+    }
+
+    #irwWrapper .section-links {
+        display: flex;
+        justify-content: center;
+
+        .section-link {
+            position: relative;
+
+            & + .section-link {
+                margin-left: 1rem;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .link-text {
+                color: $white;
+                position: absolute;
+                left: 25px;
+                bottom: 30px;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+
+        @media screen and (max-width: $md) {
+            flex-direction: column;
+            align-items: center;
+
+            .section-link + .section-link {
+                margin-top: 1rem;
+                margin-left: 0;
             }
         }
     }
