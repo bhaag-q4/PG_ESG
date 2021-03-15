@@ -1,0 +1,123 @@
+<div class="container module-data_metrics_charts">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="esg-module-title">Data & Metrics</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 chart--1">
+            <img src="/files/images/esg/citizenship_report_2020_full_water-reduction_1.png">
+        </div>
+        <div class="col-md-6 chart--2">
+            <img src="/files/images/esg/citizenship_report_2020_full_water-reduction_2.png">
+        </div>
+    </div>
+</div>
+<div class="container module-data_metrics_table">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="tbl-wrapper">
+                <table class="tbl tbl-water_metrics table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="3">Totals (absolute units x 1,000)</th>
+                            <th colspan="6" data-breakpoints="xs sm md">2020 Global Business Unit Detail (absolute units x 1,000)</th>
+                        </tr>
+                        <tr>
+                            <th>Water (cubic meters)</th>
+                            <th>2020</th>
+                            <th>2019</th>
+                            <th>2018</th>
+                            <th data-breakpoints="xs sm md">Baby,<br>Feminine and<br>Family Care</th>
+                            <th data-breakpoints="xs sm md">Beauty</th>
+                            <th data-breakpoints="xs sm md">Fabric and<br>home care</th>
+                            <th data-breakpoints="xs sm md">Grooming</th>
+                            <th data-breakpoints="xs sm md">Health Care</th>
+                            <th data-breakpoints="xs sm md">Other</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Water Consumption</td>
+                            <td>67,049</td>
+                            <td>64,296</td>
+                            <td>65,028</td>
+                            <td>41,164</td>
+                            <td>5,930</td>
+                            <td>15,091</td>
+                            <td>1,102</td>
+                            <td>2,200</td>
+                            <td>1,562</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <a href="/esg/environmental/water/default.aspx" class="btn btn-default">Return to Water Overview</a>
+        </div>
+    </div>
+</div>
+
+<script src="/files/js/irw/highcharts.js"></script>
+<script>
+    
+    $(document).ready(function() {
+        
+    //     $('#chart1').highcharts({
+    //         chart: {
+    //             type: 'bar',
+    //             height: 175,
+    //             style: {
+    //                 fontFamily: 'Montserrat, Arial, sans-serif',
+    //                 fontSize: '16px',
+    //             }
+    //         },
+    //         title: {
+    //             text: ''
+    //         },
+    //         tooltip: {
+    //             enabled: false
+    //         },
+    //         xAxis: {
+    //             categories: ['FY19/20', 'FY18/19', 'FY17/18'],
+    //             reversed: true,
+    //             lineWidth: 0,
+    //         },
+    //         yAxis: {
+    //             min: -30,
+    //             max: 0,
+    //             title: {
+    //                 text: ''
+    //             },
+    //             labels: {
+    //                 enabled: false,
+    //             },
+    //             gridLineWidth: 1,
+    //             gridLineColor: 'rgb(36, 109, 56)'
+    //         },
+    //         legend: {
+    //             enabled: false
+    //         },
+    //         plotOptions: {
+    //             bar: {
+    //                 dataLabels: {
+    //                     enabled: true,
+    //                     format: '{y}%'
+    //                 },
+    //             },
+    //             series: {
+    //                 pointWidth: 30
+    //             }
+    //         },
+    //         series: [{
+    //             data: [-27, -27, -25]
+    //         }]
+    //     });
+        
+        $('.tbl-water_metrics').footable();
+    });
+</script>

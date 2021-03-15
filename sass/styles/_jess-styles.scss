@@ -234,3 +234,138 @@
         }
     }
 }
+
+#irwWrapper .module-data_metrics {
+    &_charts {
+        margin-bottom: 2rem;
+        img {
+            max-width: 100%;
+        }
+        @media (min-width: $lg) {
+            .chart--1 {
+                text-align: right;
+            }
+
+            
+        }
+
+        @media (max-width: $lg) {
+            .chart--1,
+            .chart--2 {
+                text-align: center;   
+            }
+        }
+        // #chart1 {
+        //     .highcharts-series-group rect {
+        //         fill: rgb(36, 109, 56) !important;
+        //         &:nth-child(2) {
+        //             fill: rgb(74, 140, 88) !important;
+        //         } 
+        //         &:nth-child(3) {
+        //             fill: rgb(142, 184, 102) !important;
+        //         } 
+        //     }
+        //     .highcharts-label {
+        //         color: rgb(36, 109, 56) !important;
+        //     }
+        //     .highcharts-yaxis-grid > path:not(:last-child) {
+        //         stroke: transparent !important;
+        //     }
+        // }
+
+        // .highcharts-credits {
+        //     display: none !important;
+        // }
+    }
+    &_table {
+        .tbl-wrapper > .tbl {
+            > tbody > tr > th,
+            > tbody > tr > td {
+                padding: 12px 8px;
+            }
+    
+            > thead > tr > th:not(:first-child),
+            > tbody > tr > td:not(:first-child) {
+                text-align: center;
+            }
+    
+            > thead > tr > th {
+                color: $green;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $grey--mid;
+                vertical-align: top;
+            }
+    
+            > thead > tr:first-child > th {
+                position: relative;
+                border-bottom: none;
+                font-size: 0.8em;
+    
+                &:not(:first-child)::after {
+                    content: "";
+                    width: 90%;
+                    height: 2px;
+                    background-color: $green;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                }
+                &:last-child::after {
+                    width: 100%;
+                }
+            }
+    
+            > thead > tr:last-child > th:nth-child(n+5) {
+                font-size: 0.8em;
+                vertical-align: middle;
+            }
+    
+            > tbody > tr > td {
+                color: $blue;
+                border-top: none;
+                border-bottom: 1px solid $grey--mid;
+                font-weight: 700;
+                &:first-child {
+                    color: $green;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                }
+                &:nth-child(n+3):nth-child(-n+4) {
+                    font-weight: 400;
+                }
+            }
+    
+            .footable-detail-row {
+    
+                > td::before {
+                    content: "2020 Global Business Unit Detail (absolute units x 1,000)";
+                    font-weight: 700;
+                    margin-left: 8px;
+                    margin-bottom: 1em;
+                    display: block;
+                }
+            }
+            
+        }
+    
+        @media (max-width: $lg) {
+            .tbl-wrapper > .tbl  {
+                > thead > tr:first-child > th {
+                    &:not(:first-child)::after {
+                        width: 100%;
+                    }
+                    &:last-child {
+                        display: none !important;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .btn {
+        margin-top: 4rem;
+    }
+}
