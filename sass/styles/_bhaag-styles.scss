@@ -1,4 +1,192 @@
 #irwWrapper {
+    .esg_overview {
+        .summary-section {
+            max-width: 1100px;
+            margin: auto;
+            margin-bottom: 60px;
+        }
 
+        .summary-section .col-xs-12.col-md-6:first-child {
+            border-right: 1.5px solid $blue;
+        }
+        .message_ceo {
+            max-width: 1100px;
+            margin: auto;
+
+            .section-title {
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $blue;
+                margin-top: 0;
+            }
+
+            .message_ceo-name {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+                color: $blue;
+            }
+
+            .message_ceo-portrait {
+                margin: auto;
+                display: block;
+                padding-bottom: 36px;
+            }
+
+            .message_ceo-title {
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                max-width: 165px;
+                margin: auto;
+            }
+
+            .message_ceo-subtitle {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                color: $blue;
+            }
+
+            .message_ceo-blurb p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                color: $blue;
+            }
+
+            .frameworks_reports-title {
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $blue;
+            }
+        }
+
+        .frameworks_reports {
+            .section-title {
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $blue;
+                margin-top: 0;
+            }
+
+            .frameworks_reports-arrow {
+                position: absolute;
+                color: $blue;
+                font-size: 25px;
+            }
+
+            .frameworks_reports-list p {
+                margin-left: 20px;
+                display: inline-block;
+                padding-bottom: 30px;
+                font-weight: 900;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $blue;
+            }
+
+            .frameworks_reports-list_container {
+                padding: 25px 0 0 18px;
+            }
+        }
+
+        .circle_links {
+            max-width: 1100px;
+            margin: auto;
+            padding: 125px 0px 90px;
+
+            .circle_links-title {
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 20px;
+            }
+
+            .circle_links-img {
+                padding-right: 25px;
+                width: 100%;
+            }
+        }
+
+        .citizens_house {
+            max-width: 760px;
+            margin: auto;
+            padding-top: 105px;
+
+            .citizens_house-pg_logo {
+                margin: auto;
+                display: block;
+            }
+
+            .citizens_house-title {
+                max-width: 700px;
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: auto;
+            }
+
+            .citizens_house-subtitle {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                text-align: center;
+                color: $blue;
+            }
+
+            .citizens_house-board_title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                text-align: center;
+                padding-top: 45px;
+                color: $blue;
+            }
+
+            .citizen_house-board_name {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 18px;
+                color: $blue;
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .citizen_house-board_title {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+        }
+    }
+
+    .citizen_house-house {
+        margin: auto;
+        display: block;
+        max-width: 95%;
+    }
+
+    .light_blue_background {
+        background-color: $blue--light;
+    }
 }
 
+.PageESGESGOverview #irwWrapper {
+    padding: 0px;
+}
