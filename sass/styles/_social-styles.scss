@@ -4,6 +4,7 @@
         .shelly-section {
             max-width: 900px;
             margin: auto;
+            padding-top: 20px;
 
             .shelly-section_name {
                 color: $blue;
@@ -28,6 +29,8 @@
 
             .shelly-section_portrait {
                 max-width: 100%;
+                margin: auto;
+                display: block;
             }
         }
 
@@ -101,9 +104,9 @@
         }
 
         @media (max-width: $sm) {
-            .policies-box_box { 
-               margin-left: 15px; 
-               margin-right: 15px; 
+            .policies-box_box {
+                margin-left: 15px;
+                margin-right: 15px;
             }
         }
 
