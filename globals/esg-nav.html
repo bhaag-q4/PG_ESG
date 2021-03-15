@@ -1,0 +1,82 @@
+<nav class="esg_nav"></nav>
+<script>
+var irwHorizontalNav = {
+    navSource: '.irw-nav-source',
+    navDestination: '.esg_nav',
+    selectedClass: ' esg_nav-item--active',
+    expandedClass: ' active',
+    navigationData: [],
+    navigationTemplate: (
+        /* beautify preserve:start */
+        '{{#.}}' +
+            '{{#children}}' +
+                '{{#expanded}}' +
+                    '{{#children}}' +
+                        '{{#expanded}}' +
+                            '{{#children}}' +
+                                '<div class="esg_nav-item {{selectedClass}}">' +
+                                    '<a href="{{link}}" class="esg_nav-link">{{text}}</a>' +
+                                '</div>' +
+                            '{{/children}}' +
+                        '{{/expanded}}' +
+                    '{{/children}}' +
+                '{{/expanded}}' +
+            '{{/children}}' +
+        '{{/.}}'
+        /* beautify preserve:end */
+    ),
+    extractChildren: function($children) {
+        var inst = this,
+            children = [];
+        $children.each(function(i, child) {
+            var $this = $(this),
+                $link = $this.find('> a'),
+                $subChild = $this.find('> ul > li'),
+                url = $link.attr('href');
+
+            var urlSplit = url.toLowerCase().split('.'),
+                expanded = $this.hasClass('expanded'),
+                selected = $this.hasClass('selected');
+
+            children.push({
+                expanded: expanded,
+                selected: selected,
+                expandedClass: expanded ? inst.expandedClass : '',
+                selectedClass: selected ? inst.selectedClass : '',
+                href: $link.attr('href'),
+                text: $link.text(),
+                target: urlSplit[urlSplit.length - 1].indexOf('aspx') > -1 ? '_self' : '_blank',
+                children: $subChild.length ? inst.extractChildren($subChild) : null,
+                hasChildren: $subChild.length ? true : false,
+            });
+        });
+
+        return children;
+    },
+    render: function() {
+        var inst = this;
+
+        $(inst.navDestination).html(function() {
+            return Mustache.render(inst.navigationTemplate, inst.navigationData, { "recurse": inst.recursiveTemplate });
+        });
+    },
+    complete: function() {
+        /*Here to modify or add scripts*/
+    },
+    init: function() {
+        var inst = this;
+        console.log('inst', inst);
+        $(inst.navSource).find('> ul').each(function(i, list) {
+            var $this = $(this),
+                $children = $this.find('> li');
+
+            inst.navigationData = inst.extractChildren($children);
+        });
+
+        inst.render();
+        inst.complete();
+    }
+}
+
+irwHorizontalNav.init();
+</script>
