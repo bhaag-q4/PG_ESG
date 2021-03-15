@@ -1,0 +1,32 @@
+.esg_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.esg_nav-item {
+    height: 200px;
+    width: 200px;
+    background-color: #012169;
+    margin: 10px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: table;
+}
+
+.esg_nav-item.esg_nav-item--active {
+    background-color: #003da6;
+}
+
+
+.esg_nav-link {
+    vertical-align: middle;
+    display: table-cell;
+}
