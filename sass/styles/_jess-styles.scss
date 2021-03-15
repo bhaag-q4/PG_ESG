@@ -134,3 +134,103 @@
         }
     }
 }
+
+#irwWrapper .module-paper_packaging {
+    &_overview {
+        h4 {
+            margin-bottom: 1.5em;
+        }
+        .text-center p {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    &_efforts {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        h4 {
+            margin-bottom: 1em;
+        }
+
+        .btn {
+            margin-top: 2em;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 8rem;
+        }
+
+        @media screen and (max-width: $lg) {
+            .image-container {
+                margin-top: 3rem;
+            }
+        }
+    }
+    &_goals {
+        padding: 4rem 0 6rem;
+        .esg-module-title {
+            margin-bottom: 1.5em;
+        }
+        .custom-ul {
+            display: flex;
+            justify-content: space-between;
+
+            > li {
+                max-width: 49%;
+            }
+        }
+
+        @media (max-width: $lg) {
+            .custom-ul {
+                flex-direction: column;
+
+                li {
+                    max-width: 100%;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    &_data {
+        .text-center > h4 {
+            max-width: 100%;
+            margin-bottom: 1.5em;
+        }
+
+        .tbl-wrapper > .tbl > tbody > tr > th,
+        .tbl-wrapper > .tbl > tbody > tr > td {
+            padding: 12px 8px;
+        }
+
+        .tbl-wrapper > .tbl > thead > tr > th:not(:first-child),
+        .tbl-wrapper > .tbl > tbody > tr > td:not(:first-child) {
+            text-align: center;
+        }
+
+        .tbl-wrapper > .tbl > thead > tr > th {
+            color: $green;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid $grey--mid;
+        }
+
+        .tbl-wrapper > .tbl > tbody > tr > td {
+            color: $blue;
+            border-top: none;
+            border-bottom: 1px solid $grey--mid;
+
+            &:first-child {
+                color: $green;
+                font-size: 0.8em;
+            }
+
+            &:nth-child(2) {
+                font-weight: 700;
+            }
+        }
+    }
+}
