@@ -171,7 +171,7 @@
     }
     &_goals {
         padding-top: 4rem;
-        padding-top: 6rem;
+        padding-bottom: 6rem;
         .esg-module-title {
             margin-bottom: 1.5em;
         }
@@ -335,7 +335,7 @@
                 font-weight: 700;
                 &:first-child {
                     color: $green;
-                    font-size: 0.8em;
+                    // font-size: 0.8em;
                     font-weight: 400;
                 }
                 &:nth-child(n+3):nth-child(-n+4) {
