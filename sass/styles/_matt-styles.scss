@@ -1,5 +1,5 @@
-.pd50 {
-    margin: 50px 0;
+.mg50 {
+    margin: 50px 0 0 0;
 }
 
 .module-water {
@@ -40,11 +40,9 @@
     &__water-reduction,
     &__water-reduction-home {
         background: $white;
-        padding: 25px 0;
-    }
-
-    &__water-reduction-home {
-        margin-top: 50px;
+        padding: 25px 0 !important;
+        margin: 50px auto !important;
+        box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.171957);
     }
 
     h4.title-blue {
@@ -52,6 +50,9 @@
         max-width: 900px;
         &--narrow {
             max-width: 900px;
+            p {
+                margin: 40px 0;
+            }
         }
     }
 
@@ -72,6 +73,25 @@
 
     .back-to-top {
         margin-top: 40px;
+    }
+
+    .btn-square {
+        background: $blue !important;
+        color: $white !important;
+        padding: 37px 67px;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.171957);
+    }
+
+    p.water-home-text {
+        margin: 42px 0 61px 0 !important;
+    }
+
+    .product-innovation h2.esg-module-title.text-left {
+        text-align: left !important;
     }
 
 }
