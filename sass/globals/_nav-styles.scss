@@ -7,10 +7,10 @@
 }
 
 .esg_nav-item {
-    height: 200px;
-    width: 200px;
+    height: 171px;
+    width: 171px;
     background-color: #012169;
-    margin: 10px;
+    margin: 0px 20px;
     border-radius: 100px;
     color: white;
     font-weight: 800;
@@ -22,10 +22,13 @@
     display: table;
 }
 
+.ParentSection_social .esg_nav-item {
+    background-color: #3b0c3a;
+}
+
 .esg_nav-item.esg_nav-item--active {
     background-color: #003da6;
 }
-
 
 .esg_nav-link {
     vertical-align: middle;
