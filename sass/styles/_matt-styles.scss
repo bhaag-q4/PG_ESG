@@ -1,0 +1,51 @@
+.pd50 {
+    margin: 50px 0;
+}
+
+.module-water {
+    p.text-blue {
+        color: $blue;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.module-navbar {
+    display: flex;
+    justify-content:space-between;
+     &__link{
+         position: relative;
+        span {
+            color: $white;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 30px; 
+            bottom: 38px;
+            left: 20px;
+            padding: 0 10px;
+        }
+     }
+}
+
+.module-overview {
+    background: #E1F4F8;
+
+    &__water-reduction {
+        background: $white;
+        padding: 25px 0;
+    }
+
+    h4.title-blue {
+        margin: 0 auto;
+        &--narrow {
+            max-width: 900px;
+        }
+    }
+}
