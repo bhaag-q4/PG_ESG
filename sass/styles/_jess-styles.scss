@@ -547,3 +547,127 @@
         }
     }
 }
+
+#irwWrapper .module-palm {
+    img {
+        max-width: 100%;
+    }
+
+    &_intro {
+        padding: 0 0 6rem 0;
+        h4 {
+            margin-bottom: 1.25em;
+        }
+    }
+
+    &_use {
+        padding-bottom: 6rem;
+
+        .image-container {
+            text-align: center;
+        }
+
+        .esg-module-title {
+            text-align: left;
+            margin-bottom: 0.5em;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        @media (min-width: $lg) {
+            .esg-module-title + p {
+
+                margin-right: 8rem;
+                margin-bottom: 2em;
+            }
+            .image-container {
+                text-align: left;
+            }
+        }
+    }
+
+    &_ingredients {
+        padding: 4rem 0;
+
+        .esg-module-title {
+            max-width: 700px;
+            margin: 0 auto 1em;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .custom-ul {
+            max-width: 400px;
+        }
+    }
+
+    &_sales {
+        padding: 4rem 0;
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    &_approach {
+        padding: 4rem 0;
+
+        .esg-module-title {
+            max-width: 1000px;
+            margin: 0 auto 1em;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .section-link {
+            max-width: 245px;
+
+            & + .section-link {
+                margin-left: 1.5rem !important;
+            }
+
+            .custom-ul {
+                font-size: 0.85rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &_milestones {
+        padding: 4rem 0 0;
+        position: relative;
+        // bring light blue bg to behind footer
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            background: $blue--light;
+            z-index: 0;
+        }
+
+        .text-center {
+            max-width: 1000px;
+            margin: 2em auto;
+        }
+
+        .custom-ul a {
+            font-weight: 600;
+            font-size: 0.85em;
+            display: block;
+            margin-top: 1em;
+        }
+
+        .btn-default {
+            margin: 2em 0 1.5em;
+        }
+    }
+}
