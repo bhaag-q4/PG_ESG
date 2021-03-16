@@ -217,6 +217,7 @@
             .board-composition-summary_read-more-container {
                 margin-top: 60px;
                 margin-bottom: 80px;
+                text-align: center;
             }
 
             .board-composition-summary_read-more {
@@ -228,7 +229,6 @@
                 border: 2px solid $blue;
                 padding: 10px 20px;
                 border-radius: 22px;
-                margin-left: calc(50% - 215px);
                 text-transform: uppercase;
             }
         }
