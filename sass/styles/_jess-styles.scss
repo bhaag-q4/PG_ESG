@@ -638,6 +638,11 @@
         .section-link {
             max-width: 245px;
 
+            a {
+                position: relative;
+                display: block;
+            }
+
             & + .section-link {
                 margin-left: 1.5rem !important;
             }
