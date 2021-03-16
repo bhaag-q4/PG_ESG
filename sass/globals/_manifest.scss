@@ -211,3 +211,9 @@ $xl: 1200px;
         }
     }
 }
+
+//for images to be centerd when mobile
+#irwWrapper .image-container img {
+    margin: auto;
+    display: block;
+}

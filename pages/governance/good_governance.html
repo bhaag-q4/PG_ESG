@@ -93,23 +93,25 @@
                 '{{/.}}' +
             '</div> ' +
         '</div> ' +
-        '<div class="row {{class}}"> ' +
-            '{{#.}}{{#items}}' +
-                '<div class="governance-highlights_item col-xs-12 col-md-4"> ' +
-                    '<h4 class="governance-highlights_item-title"> ' +
-                        '{{title}}' +
-                    '</h4> ' +
-                    '{{#points}}' +
-                        '<div class="governance-highlights_item-point"> ' +
-                            '<span class="governance-highlights_angle-right fa fa-angle-right"></span> ' +
-                            '<span class="governance-highlights_item-point-text"> ' +
-                                '{{.}} ' +
-                            '</span> ' +
-                        '</div> ' +
-                    '{{/points}}' +
-                '</div> ' +
-            '{{/items}}{{/.}}' +
-        '</div> '
+        '{{#.}}' +
+            '<div class="governance-highlights_item-container row {{class}} {{#active}}governance-highlights_item-container--active{{/active}}"> ' +
+                '{{#items}}' +
+                    '<div class="governance-highlights_item col-xs-12 col-md-4"> ' +
+                        '<h4 class="governance-highlights_item-title"> ' +
+                            '{{title}}' +
+                        '</h4> ' +
+                        '{{#points}}' +
+                            '<div class="governance-highlights_item-point"> ' +
+                                '<span class="governance-highlights_angle-right fa fa-angle-right"></span> ' +
+                                '<span class="governance-highlights_item-point-text"> ' +
+                                    '{{.}} ' +
+                                '</span> ' +
+                            '</div> ' +
+                        '{{/points}}' +
+                    '</div> ' +
+                '{{/items}} ' +
+            '</div>' +
+        '{{/.}}' 
         // @formatter:on
         /* beautify preserve:end */
     );
@@ -188,4 +190,13 @@
     var rendered = Mustache.render(highlightsTemplate, highlightsData);
 
     document.getElementById('governance-highlights').innerHTML = rendered;
+
+
+    $('.governance-highlights_tab').on('click', function(e) {
+        e.preventDefault();
+        $('.governance-highlights_item-container').removeClass('governance-highlights_item-container--active');
+        $('.governance-highlights_tab').removeClass('governance-highlights_tab--active');
+        $(this).addClass('governance-highlights_tab--active');
+        $('.' + $(this).attr('section-id')).addClass('governance-highlights_item-container--active')
+    })
 </script>
