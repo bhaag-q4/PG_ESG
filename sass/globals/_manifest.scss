@@ -251,6 +251,20 @@ $xl: 1200px;
             }
         }
     }
+
+    &_environmental {
+        .esg_nav .esg_nav-item {
+            background-color: $green;
+            &--active {
+                background-color: $blue2;
+            }
+
+            // hide overview page
+            &:last-child {
+                display: none;
+            }
+        }
+    }
 }
 
 //for images to be centerd when mobile
