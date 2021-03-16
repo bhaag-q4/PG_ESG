@@ -671,3 +671,88 @@
         }
     }
 }
+
+#irwWrapper .module-responsible_sourcing {
+    img {
+        max-width: 100%;
+    }
+    .btn {
+        margin-top: 2em;
+    }
+    &_intro {
+        padding-bottom: 6rem;
+        .esg-module-title.align-left {
+            text-align: left;
+        }
+        h4 {
+            margin-bottom: 2em;
+        }
+        
+    }
+
+    &_commitment {
+        padding: 4rem 0;
+
+        .esg-module-title,
+        .text-center {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .custom-ul {
+            text-align: left;
+            max-width: 600px;
+            margin: 1.5em auto 2em;
+        }
+
+        .learn-more p {
+            max-width: 325px;
+            @media screen and (max-width: $md) {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    &_goals {
+        padding: 4rem 0;
+
+        .esg-module-title,
+        h4 {
+            max-width: 550px;
+        }
+        .esg-module-title {
+            text-align: left;
+        }
+
+        .small-text {
+            font-size: 0.9em;
+        }
+
+        .row + .row {
+            margin-top: 3rem;
+        }
+    }
+
+    &_transparency {
+        padding: 4rem 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            background: $blue--light;
+            z-index: 0;
+        }
+
+        h5:not(:first-child) {
+            margin-top: 1.5em;
+        }
+    }
+}
