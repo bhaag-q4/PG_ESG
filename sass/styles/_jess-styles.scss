@@ -196,6 +196,7 @@
     }
 
     &_data {
+        margin-top: 4rem;
         .text-center > h4 {
             max-width: 100%;
             margin-bottom: 1.5em;
@@ -225,12 +226,16 @@
 
             &:first-child {
                 color: $green;
-                font-size: 0.8em;
+                // font-size: 0.8em;
             }
 
             &:nth-child(2) {
                 font-weight: 700;
             }
+        }
+
+        .btn {
+            margin-top: 4rem;
         }
     }
 }
