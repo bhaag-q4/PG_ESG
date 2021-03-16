@@ -1,3 +1,10 @@
+@media (min-width: 1200px) {
+    .page-header .navigation #global-navigation-header > .navigation__group-items > .navigation__group:nth-child(2) {
+        margin-right: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
 #irwWrapper {
     .esg_overview {
         .summary-section {
@@ -76,11 +83,16 @@
             .frameworks_reports-list p {
                 margin-left: 20px;
                 display: inline-block;
-                padding-bottom: 30px;
+                padding-bottom: 0px;
                 font-weight: 900;
                 font-size: 20px;
                 text-transform: uppercase;
                 color: $blue;
+            }
+
+            .frameworks_reports-list_item {
+                display: block;
+                margin-bottom: 60px;
             }
 
             .frameworks_reports-list_container {
