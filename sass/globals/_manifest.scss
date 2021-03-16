@@ -43,6 +43,33 @@ $xl: 1200px;
 
 // common elements
 .section--esg {
+
+    .esg--hidden {
+        display: none;
+    }
+
+    .hero-ir-inner-page {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            color: #fff;
+            font-size: 72px;
+            line-height: 1.2;
+            top: 40%;
+            transform: translateY(-50%);
+            width: 100%;
+            font-size: 28px;
+
+            @media (max-width: $lg) {
+                font-size: 56px;
+            }
+            @media (max-width: $sm) {
+                font-size: 28px;
+            }
+        }
+    }
+
     #irwWrapper {
         padding-left: 0;
         padding-right: 0;
