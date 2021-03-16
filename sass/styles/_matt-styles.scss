@@ -37,15 +37,41 @@
 .module-overview {
     background: #E1F4F8;
 
-    &__water-reduction {
+    &__water-reduction,
+    &__water-reduction-home {
         background: $white;
         padding: 25px 0;
     }
 
+    &__water-reduction-home {
+        margin-top: 50px;
+    }
+
     h4.title-blue {
         margin: 0 auto;
+        max-width: 900px;
         &--narrow {
             max-width: 900px;
         }
     }
+
+    p.progress-text {
+        max-width: 875px;
+        margin: 0 auto;
+    }
+    
+    .container {
+        margin: 0 auto;
+        &--tight {
+            max-width: 781px;
+        }
+        &--small {
+            padding: 0 5%; 
+        }
+    }
+
+    .back-to-top {
+        margin-top: 40px;
+    }
+
 }
