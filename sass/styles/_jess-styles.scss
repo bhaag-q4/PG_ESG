@@ -170,7 +170,8 @@
         }
     }
     &_goals {
-        padding: 4rem 0 6rem;
+        padding-top: 4rem;
+        padding-top: 6rem;
         .esg-module-title {
             margin-bottom: 1.5em;
         }
@@ -387,7 +388,8 @@
         }
     }
     &_scope_1_2 {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         h4 {
             margin-bottom: 1em;
         }
@@ -483,7 +485,8 @@
         }
     }
     &_scope_3 {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         .esg-module-title {
             text-align: left;
         }
@@ -559,7 +562,7 @@
     }
 
     &_intro {
-        padding: 0 0 6rem 0;
+        padding-bottom: 6rem;
         h4 {
             margin-bottom: 1.25em;
         }
@@ -594,7 +597,8 @@
     }
 
     &_ingredients {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title {
             max-width: 700px;
@@ -611,14 +615,16 @@
     }
 
     &_sales {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         h4 {
             margin-top: 0;
         }
     }
 
     &_approach {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title {
             max-width: 1000px;
@@ -644,7 +650,7 @@
     }
 
     &_milestones {
-        padding: 4rem 0 0;
+        padding-top: 4rem;
         position: relative;
         // bring light blue bg to behind footer
         &::after {
@@ -696,7 +702,8 @@
     }
 
     &_commitment {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title,
         .text-center {
@@ -721,7 +728,8 @@
     }
 
     &_goals {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title,
         h4 {
@@ -741,7 +749,8 @@
     }
 
     &_transparency {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         position: relative;
 
         &::after {
