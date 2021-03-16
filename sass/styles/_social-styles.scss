@@ -59,6 +59,14 @@
     // 3.2 Advocating for Social Justice
     .module_advocating_social {
 
+        .module_advocating_social-subtitle {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 26px;
+            text-align: center;
+            color: #003DA7;
+        }
+
         .social-advocacy-section {
             max-width: 1100px;
             margin: auto;
@@ -110,9 +118,10 @@
         position: relative;
 
         .policies-box_box {
-            border: 1px solid $black;
+            border: 1px solid #979797;
             padding: 19px 26px;
             margin-bottom: 25px;
+            border-radius: 5px;
         }
 
         @media (max-width: $sm) {
