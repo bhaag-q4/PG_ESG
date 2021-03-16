@@ -80,6 +80,10 @@ $xl: 1200px;
         font-size: 24px;
         line-height: 26px;
         margin-top: 28px;
+
+        a {
+            text-decoration: underline;
+        }
     }
 
     #irwWrapper .text-center h4 {
