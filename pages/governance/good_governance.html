@@ -86,14 +86,14 @@
             '<div class="row"> ' +
                 '{{#.}}' +
                     '<div class="col-xs-12 col-sm-4"> ' +
-                        '<button class="governance-highlights_tab"> ' +
+                        '<button section-id="{{class}}" class="governance-highlights_tab {{#active}}governance-highlights_tab--active{{/active}}"> ' +
                             '{{title}}' +
                         '</button> ' +
                     '</div> ' +
                 '{{/.}}' +
             '</div> ' +
         '</div> ' +
-        '<div class="row"> ' +
+        '<div class="row {{class}}"> ' +
             '{{#.}}{{#items}}' +
                 '<div class="governance-highlights_item col-xs-12 col-md-4"> ' +
                     '<h4 class="governance-highlights_item-title"> ' +
@@ -115,50 +115,76 @@
     );
 
     var highlightsData = [{
-        title: "Board Structure & Composition",
-        items: [{
-            title: "Director Independence",
-            points: [
-                "11 of 12 Director nominees are independent",
-                "Four fully independent Board Committees",
-            ],
-        }, {
-            title: "Board Leadership",
-            points: [
-                "Annual assessment and determination of Board leadership structure",
-                "Annual election of independent Lead Director if Chairman/CEO roles are combined or the Chairman is not independent",
-                "Lead Director has strong role and significant governance duties, including chairing regular executive sessions of independent Directors",
-            ],
-        }, {
-            title: "Board Refreshment & Diversity",
-            points: [
-                "Balance of new and experienced Directors. More than 50% of Director nominees have tenures of less than 6 years and average tenure is less than 7 years",
-                "Retirement age and term limit for Directors",
-                "7 of 12 Director nominees are women and/or ethnically diverse",
-                "Average age of Director nominees is 65",
-            ],
-        }, {
-            title: "Evaluation & Effectiveness",
-            points: [
-                "Annual Board and Committee self-assessments",
-                "One-on-one reviews with individual Directors to ensure thoughtful, candid feedback",
-                "Annual independent Director evaluation of Chairman and CEO and continuous Director feedback",
-            ],
-        }, {
-            title: "Director Engagement",
-            points: [
-                "Directors attended more than 95% of Board and Committee meetings in FY 2019-20",
-                "Board policy limits Director membership on other public company boards",
-            ],
-        }, {
-            title: "Director Access",
-            points: [
-                "Directors have significant interaction with senior business leaders and access to other employees",
-                "Directors have ability to hire outside experts and consultants and to conduct independent investigations",
-                "Directors participate in focused sessions on emerging topics and visits to strategic Company operations globally",
-            ],
-        }]
-    }, ];
+            title: "Board Structure & Composition",
+            active: true,
+            class: "board_structure",
+            items: [{
+                title: "Director Independence",
+                points: [
+                    "11 of 12 Director nominees are independent",
+                    "Four fully independent Board Committees",
+                ],
+            }, {
+                title: "Board Leadership",
+                points: [
+                    "Annual assessment and determination of Board leadership structure",
+                    "Annual election of independent Lead Director if Chairman/CEO roles are combined or the Chairman is not independent",
+                    "Lead Director has strong role and significant governance duties, including chairing regular executive sessions of independent Directors",
+                ],
+            }, {
+                title: "Board Refreshment & Diversity",
+                points: [
+                    "Balance of new and experienced Directors. More than 50% of Director nominees have tenures of less than 6 years and average tenure is less than 7 years",
+                    "Retirement age and term limit for Directors",
+                    "7 of 12 Director nominees are women and/or ethnically diverse",
+                    "Average age of Director nominees is 65",
+                ],
+            }, {
+                title: "Evaluation & Effectiveness",
+                points: [
+                    "Annual Board and Committee self-assessments",
+                    "One-on-one reviews with individual Directors to ensure thoughtful, candid feedback",
+                    "Annual independent Director evaluation of Chairman and CEO and continuous Director feedback",
+                ],
+            }, {
+                title: "Director Engagement",
+                points: [
+                    "Directors attended more than 95% of Board and Committee meetings in FY 2019-20",
+                    "Board policy limits Director membership on other public company boards",
+                ],
+            }, {
+                title: "Director Access",
+                points: [
+                    "Directors have significant interaction with senior business leaders and access to other employees",
+                    "Directors have ability to hire outside experts and consultants and to conduct independent investigations",
+                    "Directors participate in focused sessions on emerging topics and visits to strategic Company operations globally",
+                ],
+            }]
+        },
+        {
+            title: "Governance Best Practices",
+            class: "government_best_practices",
+            items: [{
+                title: "Lorem ipsum dolor sit amet,",
+                points: [
+                    "Lorem ipsum dolor sit amet,",
+                    "Lorem ipsum dolor sit amet,",
+                ],
+            }]
+        },
+        {
+            title: "Shareholder Rights & Engagement",
+            class: "shareholder_rights_engagement",
+            items: [{
+                title: "lisis lorem vehicula pretium",
+                points: [
+                    "Lorem ipsum dolor sit amet,",
+                    "stibulum leo et enim tristique, vel finibus ",
+                ],
+            }]
+        },
+
+    ];
     var rendered = Mustache.render(highlightsTemplate, highlightsData);
 
     document.getElementById('governance-highlights').innerHTML = rendered;

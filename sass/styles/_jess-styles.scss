@@ -369,3 +369,181 @@
         margin-top: 4rem;
     }
 }
+
+#irwWrapper .module-climate {
+    &_intro {
+        margin-bottom: 4rem;
+        h4 {
+            margin-bottom: 1em;
+        }
+        .btn {
+            margin: 0.5em;
+            display: inline-block;
+        }
+    }
+    &_scope_1_2 {
+        padding: 4rem 0;
+        h4 {
+            margin-bottom: 1em;
+        }
+        .tbl-wrapper > .tbl {
+            > tbody > tr > th,
+            > tbody > tr > td {
+                padding: 12px 8px;
+            }
+    
+            > thead > tr > th:not(:first-child),
+            > tbody > tr > td:not(:first-child) {
+                text-align: center;
+            }
+    
+            > thead > tr > th {
+                color: $green;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $grey--mid;
+                vertical-align: top;
+            }
+    
+            > thead > tr:first-child > th {
+                position: relative;
+                border-bottom: none;
+                font-size: 0.8em;
+    
+                &:not(:first-child)::after {
+                    content: "";
+                    width: 90%;
+                    height: 2px;
+                    background-color: $green;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                }
+                &:last-child::after {
+                    width: 100%;
+                }
+            }
+    
+            > thead > tr:last-child > th:nth-child(n+5) {
+                font-size: 0.8em;
+                vertical-align: middle;
+            }
+    
+            > tbody > tr > td {
+                color: $blue;
+                border-top: none;
+                border-bottom: 1px solid $grey--mid;
+                font-weight: 700;
+                &:first-child {
+                    color: $green;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                }
+                &:nth-child(n+3):nth-child(-n+4) {
+                    font-weight: 400;
+                }
+            }
+    
+            .footable-detail-row {
+    
+                > td::before {
+                    content: "2020 Global Business Unit Detail (absolute units x 1,000)";
+                    font-weight: 700;
+                    margin-left: 8px;
+                    margin-bottom: 1em;
+                    display: block;
+                }
+            }
+
+            > tfoot > tr > td {
+                padding-top: 1.5rem;
+                font-size: 13px;
+            }
+            
+        }
+    
+        @media (max-width: $lg) {
+            .tbl-wrapper > .tbl  {
+                > thead > tr:first-child > th {
+                    &:not(:first-child)::after {
+                        width: 100%;
+                    }
+                    &:last-child {
+                        display: none !important;
+                    }
+                }
+                
+            }
+        }
+    }
+    &_scope_3 {
+        padding: 4rem 0;
+        .esg-module-title {
+            text-align: left;
+        }
+        .tbl-wrapper > .tbl {
+            margin: 3rem 0 3rem 3rem;
+            > tbody > tr > th,
+            > tbody > tr > td {
+                padding: 12px 8px;
+            }
+    
+            > thead > tr > th:not(:first-child),
+            > tbody > tr > td:not(:first-child) {
+                text-align: right;
+            }
+    
+            > thead > tr > th {
+                color: $green;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $grey--mid;
+                vertical-align: top;
+                font-size: 24px;
+                line-height: 26px;
+            }
+    
+
+            > tbody > tr > td {
+                color: $blue;
+                border-top: none;
+                border-bottom: 1px solid $grey--mid;
+                font-weight: 700;
+                &:first-child {
+                    color: $green;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                }
+            }
+    
+            > tfoot > tr > td {
+                padding-top: 1.5rem;
+                font-size: 13px;
+            }
+            
+        }
+
+        @media (max-width: $lg) {
+            .tbl-wrapper > .tbl {
+                margin-left: 0;
+            }
+        }
+    }
+    &_goals {
+        padding-top: 4rem;
+        position: relative;
+        // bring grey bg to behind footer
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            background: $grey;
+            z-index: 0;
+        }
+    }
+}
