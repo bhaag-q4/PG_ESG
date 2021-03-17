@@ -1,0 +1,19 @@
+<script>
+    $(function () {
+        var panel = $('.accordion__panel-heading');
+
+        $.each(panel, function (i, item) {
+            $(this).on('click', function (e) {
+                $(this).next().toggleClass('panel__content--active');
+
+                if ($(this).next().hasClass('panel__content--active')) {
+                    $(this).next().show();
+                    $(this).find('span.fa').attr('class', 'fa fa-chevron-up');
+                } else {
+                    $(this).next().hide();
+                    $(this).find('span.fa').attr('class', 'fa fa-chevron-down');
+                }
+            });
+        });
+    });
+</script>

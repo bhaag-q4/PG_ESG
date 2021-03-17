@@ -46,6 +46,10 @@ $xl: 1200px;
     background-color: $blue--light;
 }
 
+.white-background {
+    background-color: $white;
+}
+
 // common elements
 .section--esg {
     .esg--hidden {
@@ -343,6 +347,36 @@ $xl: 1200px;
         }
     }
 }
+
+
+//accordian
+
+.accordion {
+    &__panel {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.171957);
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    &__panel-heading {
+        padding: 33px 0 33px 26px;
+        color: $blue;
+        text-transform: uppercase;
+        font-weight: 600;
+        > span {
+            color: $blue;
+            float: right;
+            padding-right: 25px;
+        }
+    }
+    &__panel-content {
+        display: none;
+        p {
+            padding: 0 25px 15px 25px
+        }
+    }
+}
+
 
 //for images to be centerd when mobile
 #irwWrapper .image-container img {
