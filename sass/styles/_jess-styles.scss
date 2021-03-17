@@ -775,3 +775,179 @@
         }
     }
 }
+
+#irwWrapper .module-plastic_packaging {
+    &_intro {
+        margin-bottom: 4rem;
+        h4 {
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+        }
+        .blue-boxes {
+            margin-bottom: 1rem;
+
+            .blue-box {
+                background-color: $blue;
+                color: $white;
+                box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.171957);
+                border-radius: 10px;
+                margin-bottom: 2rem;
+    
+                p {
+                    padding: 1.75em 1.25em;
+                    margin: 0;
+                }
+            }
+        }
+
+        .section-links {
+            margin-bottom: 1rem;
+        }
+        
+    }
+    &_efforts {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .accordion-container {
+            margin-top: 1.5rem;
+        }
+        .accordion {
+            &__panel {
+                background: #FFFFFF;
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.171957);
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            &__panel-heading {
+                padding: 33px 0 33px 26px;
+                color: $blue;
+                text-transform: uppercase;
+                font-weight: 600;
+                > span {
+                    color: $blue;
+                    float: right;
+                    padding-right: 25px;
+                }
+            }
+            &__panel-content {
+                display: none;
+                padding: 0 25px 15px 25px;
+                
+                h5 {
+                    font-size: 0.9rem;
+                    margin-top: 0;
+                    text-transform: unset;
+                }
+
+                .custom-ul {
+                    margin-bottom: 1rem;
+                }
+
+                p.btn-paragraph .btn {
+                    margin-left: 0.8em;
+                }
+            }
+        }
+    }
+    &_goals {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        h4 {
+            min-height: 52px;
+            margin-bottom: 1em;
+        }
+    }
+    &_metrics {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .esg-module-title {
+            text-align: left;
+        }
+        h4 {
+            margin: 1em 0;
+        }
+        .tbl-wrapper > .tbl {
+            > tbody > tr > th,
+            > tbody > tr > td {
+                padding: 12px 8px;
+            }
+    
+            > thead > tr > th:not(:first-child),
+            > tbody > tr > td:not(:first-child) {
+                text-align: right;
+            }
+    
+            > thead > tr > th {
+                color: $green;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $grey--mid;
+                vertical-align: top;
+                font-size: 24px;
+                line-height: 26px;
+            }
+    
+
+            > tbody > tr > td {
+                color: $blue;
+                border-top: none;
+                border-bottom: 1px solid $grey--mid;
+                font-weight: 700;
+                &:first-child {
+                    color: $green;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                }
+            }
+    
+            > tfoot > tr > td {
+                padding-top: 1.5rem;
+                font-size: 13px;
+            }
+            
+        }
+    }
+    &_partnerships {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .esg-module-title {
+            text-align: left;
+        }
+    }
+    &_perspectives {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .esg-module-title,
+        h4,
+        .custom-ul > li::before {
+            color: $white;
+        }
+
+        h4 {
+            margin-bottom: 1em;
+        }
+    }
+    &_references {
+        padding-top: 4rem;
+        .esg-module-title {
+            margin-bottom: 1em;
+        }
+        .btn {
+            margin-top: 2em;
+        }
+        @media (min-width: $lg) {
+            .text-center {
+                padding: 0 4rem;
+            }
+
+            .col-md-6:nth-child(even) {
+                border-left: 1px solid #D8D8D8;
+            }
+
+            h4 {
+                margin-top: 0;
+            }
+        }
+    }
+}
