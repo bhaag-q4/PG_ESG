@@ -19,7 +19,7 @@
             }
 
             .citizen_house-board_item.col-xs-12.col-sm-6:first-child {
-                border-right: 1.5px solid #C4C4C4;
+                border-right: 1.5px solid #c4c4c4;
             }
         }
 
@@ -194,6 +194,118 @@
 
     .light_blue_background {
         background-color: $blue--light;
+    }
+
+    .module-compliance-monitoring {
+        .compliance-monitoring {
+            max-width: 870px;
+            padding-bottom: 85px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .grievance-tracker {
+            padding: 85px 0px;
+            max-width: 780px;
+            text-align: center;
+            margin: auto;
+
+            .esg-module-title {
+                padding-bottom: 30px;
+            }
+
+            p {
+                padding-bottom: 30px;
+            }
+        }
+
+        #irwWrapper .grievance-tracker_button {
+            margin-top: 25px;
+        }
+
+        .what_how_where {
+            text-align: left;
+            padding: 85px 0px;
+            margin: auto;
+            max-width: 1100px;
+
+            .esg-module-title {
+                text-align: left;
+            }
+
+            p {
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                padding-bottom: 20px;
+            }
+        }
+
+        .report-grievance {
+            max-width: 762px;
+            padding: 80px 0px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .report-grievance_button {
+            margin-top: 25px;
+            margin: auto;
+
+            h2 {
+                max-width: 918px;
+            }
+
+            h4 {
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+
+    .implementation-satellite {
+        padding: 90px 0px;
+        margin: auto;
+        max-width: 1100px;
+
+        h2 {
+            padding-bottom: 25px;
+            text-align: left;
+            max-width: 918px;
+        }
+    }
+
+    .reporting-portal {
+        padding: 65px 0px;
+        text-align: center;
+        max-width: 920px;
+        margin: auto;
+
+        .custom-ul {
+            text-align: left;
+        }
+
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $grey;
+            z-index: 0;
+        }
+
+        h5 {
+            margin-top: 65px;
+            text-align: left;
+        }
+    }
+
+    .learn-more-link {
+        margin-left: 32px;
+        text-align: left;
     }
 }
 

@@ -4,7 +4,7 @@ var irwHorizontalNav = {
     navSource: '.irw-nav-source',
     navDestination: '.esg_nav',
     selectedClass: ' esg_nav-item--active',
-    expandedClass: ' active',
+    expandedClass: ' esg_nav-item--active',
     navigationData: [],
     navigationTemplate: (
         /* beautify preserve:start */
@@ -14,7 +14,7 @@ var irwHorizontalNav = {
                     '{{#children}}' +
                         '{{#expanded}}' +
                             '{{#children}}' +
-                                '<div class="esg_nav-item {{selectedClass}}">' +
+                                '<div class="esg_nav-item {{selectedClass}} {{expandedClass}}">' +
                                     '<a href="{{href}}" target={{target}} class="esg_nav-link">{{text}}</a>' +
                                 '</div>' +
                             '{{/children}}' +
