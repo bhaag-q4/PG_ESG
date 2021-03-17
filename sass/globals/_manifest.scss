@@ -103,6 +103,14 @@ $xl: 1200px;
         margin-bottom: 1.5em;
     }
 
+    #irwWrapper h6 {
+        color: $blue;
+        font-size: 16px;
+        margin-bottom: 1.5em;
+        font-weight: 600;
+        text-transform: none;
+    }
+
     #irwWrapper .title--arrow {
         &::after {
             display: inline-block;
