@@ -10,11 +10,11 @@
                 <h4>
                     P&G has issued a TCFD aligned report and has responded to CDP’s Climate Survey.   Those reports, GHG Emissions Data, and progress vs. goals can be accessed via the following links:
                 </h4>
-                <div class="bn-container">
-                    <a href="" class="btn btn-default">TCFD</a>
-                    <a href="" class="btn btn-default">CDP</a>
-                    <a href="" class="btn btn-default">GHG Emissions Data</a>
-                    <a href="" class="btn btn-default">Progress vs. Goals</a>
+                <div class="btn-container">
+                    <a href="https://images.ctfassets.net/oggad6svuzkv/1baensCXGsHkg2QmmDtAFP/5784d529b3df4ec5559e2177285cd645/8762_P_G_2020_Citizenship_Climate_Change_FA.pdf" target="_blank" class="btn btn-default">TCFD</a>
+                    <a href="https://www.cdp.net/en/" target="_blank" class="btn btn-default">CDP</a>
+                    <a href="#climate_scope_1_2" class="btn btn-default btn-jump">GHG Emissions Data</a>
+                    <a href="#climate_goals" class="btn btn-default btn-jump">Progress vs. Goals</a>
                 </div>
             </div>
         </div>
@@ -275,5 +275,12 @@
 <script>
     $(document).ready(function() {
         $('.tbl-ghg_emissions').footable();
-    })
+
+        $('.module-climate_intro .btn-container').on('click', 'a[href*="#"]', function (e) {
+            var hash = $(this).attr('href').split('#')[1];
+            e.preventDefault();
+            window.location.hash = hash;
+            q4App.scrollTo($('.module-' + hash));
+        });
+    });
 </script>
