@@ -197,7 +197,6 @@
     }
 
     .module-compliance-monitoring {
-
         .btn-default {
             margin-top: 25px;
         }
@@ -312,6 +311,170 @@
         .learn-more-link {
             margin-left: 32px;
             text-align: left;
+        }
+    }
+
+    .module-partnership-force {
+        .partnership-force_intro {
+            text-align: center;
+            padding-bottom: 0px 15px 40px;
+            margin: auto;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            h3,
+            p {
+                max-width: 788px;
+                margin: auto;
+            }
+
+            h3 {
+                padding-bottom: 17px;
+            }
+        }
+
+        .partnership-force_list {
+            padding: 45px 15px 80px;
+            max-width: 1100px;
+        }
+
+        .enabling-smallholder {
+            max-width: 1100px;
+            padding: 95px 15px 65px;
+
+            h2 {
+                max-width: 789px;
+                text-align: left;
+            }
+
+            @media (min-width: $md) {
+                img {
+                    margin-top: -35px;
+                }
+            }
+        }
+
+        .program-goals {
+            max-width: 1100px;
+            padding-bottom: 45px;
+
+            .custom-ul {
+
+                li {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        .progress-in-partnership {
+            padding-bottom: 100px;
+            max-width: 1100px;
+
+            h6 {
+                max-width: 764px;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+            }
+
+            .less-bottom-padding {
+                padding-bottom: 10px;
+
+            }
+
+            .custom-ul {
+                li {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        .wwf-malaysia {
+            padding: 90px 15px 80px;
+            margin: auto;
+            max-width: 1100px;
+
+            h2 {
+                max-width: 984px;
+                margin: auto;
+                margin-bottom: 28px;
+            }
+
+            @media (min-width: $md) {
+                .row {
+                    display: flex;
+                    height: 100%;
+                }
+
+                .col-xs-12.col-lg-6 {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+
+        .engaging-partnering {
+            max-width: 984px;
+            padding-top: 100px;
+
+            h2 {
+
+            }
+        }
+
+        .engaging-partnering-includes {
+            max-width: 1100px;
+
+            .custom-ul {
+                max-width: 425px;
+
+                li {
+                    padding-bottom: 15px;
+                }
+            }
+
+            .title--arrow {
+                padding-bottom: 17px;
+            }
+
+            .btn-default {
+                margin-top: 100px;
+            }
+
+            &::after {
+                content: "";
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $grey;
+                z-index: 0;
+            }
+        }
+
+        .learn-more-link {
+            margin-left: 32px;
+            text-align: left;
+            margin-bottom: 35px;
+            &.learn-more-link--no-padding {
+                margin-left: 0px;
+            }
         }
     }
 }
