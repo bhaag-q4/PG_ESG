@@ -7,8 +7,8 @@
 
 #irwWrapper {
     .esg_overview {
-            margin-top: -90px;
-            
+        margin-top: -90px;
+
         .summary-section {
             max-width: 1100px;
             margin: auto;
@@ -487,6 +487,115 @@
             &.learn-more-link--no-padding {
                 margin-left: 0px;
             }
+        }
+    }
+
+    .module-pulp {
+        .custom-ul {
+            margin: 0 0px 1em 30px;
+        }
+
+        .blue-light-background {
+            padding: 80px 0 50px;
+        }
+
+        .accordion__panel-content.panel__content--active {
+            padding-bottom: 15px;
+        }
+
+        .accordion__panel {
+            margin-bottom: 20px;
+        }
+
+        .module-pulp_intro {
+            padding: 50px;
+        }
+
+        .btn_to-top {
+            margin-top: 20px;
+        }
+
+        .white-background {
+            max-width: 1100px;
+            padding: 20px 100px 60px;
+        }
+
+        .module-pulp_efforts,
+        .module-pulp_progress,
+        .module-pulp_data,
+        .module-pulp_perspectives {
+            h2.esg-module-title {
+                padding-bottom: 25px;
+            }
+        }
+
+        .pulp_progress-table {
+            @media (min-width: $lg) {
+                display: flex;
+            }
+
+            .custom-ul {
+                padding: 15px 15px 0 0;
+            }
+
+            .col-xs-12.col-lg-4 {
+                padding: 0px;
+                border: 1px solid $blue;
+                border-right: none;
+                margin-bottom: 15px;
+            }
+
+            .col-xs-12.col-lg-4:last-child {
+                border-right: 1px solid $blue;
+            }
+
+            @media (max-width: $lg) {
+                .col-xs-12.col-lg-4 {
+                    border: 1px solid $blue;
+                }
+            }
+        }
+
+        .pulp_progress-title {
+            color: $white;
+            background-color: $blue;
+            text-align: center;
+            padding: 17px 0px;
+            margin-top: 0px;
+            border-right: 1px solid white;
+            margin-right: -1px;
+
+            @media (min-width: $lg) {
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 63px;
+                    background-color: white;
+                    position: absolute;
+                    right: -1px;
+                    top: 0px;
+                    z-index: 2;
+                }
+            }
+        }
+
+        .module-pulp_data-table-toggles {
+            padding-bottom: 20px;
+            text-align: center;
+
+            .btn.btn-default.selected {
+                color: white;
+                background-color: $blue;
+            }
+        }
+        .module-pulp_data-table-container {
+            img {
+                width: 100%;
+            }
+        }
+
+        .module-pulp_perspectives {
+            padding-top: 50px;
         }
     }
 }
