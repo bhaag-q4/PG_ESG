@@ -2,6 +2,10 @@
     margin: 50px 0 0 0;
 }
 
+.mgb50 {
+    margin-bottom: 50px !important;
+}
+
 .module-water {
     p.text-blue {
         color: $blue;
@@ -38,7 +42,8 @@
     background: #E1F4F8;
 
     &__water-reduction,
-    &__water-reduction-home {
+    &__water-reduction-home,
+    &__water-conserving-basins {
         background: $white;
         padding: 25px 0 !important;
         margin: 50px auto !important;
@@ -90,8 +95,68 @@
         margin: 42px 0 61px 0 !important;
     }
 
-    .product-innovation h2.esg-module-title.text-left {
+    .product-innovation h2.esg-module-title.text-left,
+    .collaboration h2.esg-module-title.text-left,
+    .consumer-education h2.esg-module-title.text-left,
+    .collaboration h2.esg-module-title.text-left {
         text-align: left !important;
+        max-width: 451px;
+    }
+
+    .product-innovation .accordion {
+        padding-left: 25px;
+    }
+
+    p.text-small {
+        font-size: 13px;
+        line-height: 18px;    
+    }
+
+    .basin-tbl {
+        color: $green !important;
+        &__row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &__head {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &__value {
+            font-size: 14px;
+            line-height: 17px;
+            &--blue {
+                font-weight: bold;
+                color: $blue;
+            }
+        }
+    }
+
+    .accordion {
+        &__panel {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.171957);
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        &__panel-heading {
+            padding: 33px 0 33px 26px;
+            color: $blue;
+            text-transform: uppercase;
+            font-weight: 600;
+            > span {
+                color: $blue;
+                float: right;
+                padding-right: 25px;
+            }
+        }
+        &__panel-content {
+            display: none;
+            p {
+                padding: 0 25px 15px 25px
+            }
+        }
     }
 
 }
