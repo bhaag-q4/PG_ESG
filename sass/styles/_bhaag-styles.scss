@@ -197,9 +197,14 @@
     }
 
     .module-compliance-monitoring {
+
+        .btn-default {
+            margin-top: 25px;
+        }
+
         .compliance-monitoring {
             max-width: 870px;
-            padding-bottom: 85px;
+            padding: 0px 15px 85px 15px;
             text-align: center;
             margin: auto;
         }
@@ -217,10 +222,9 @@
             p {
                 padding-bottom: 30px;
             }
-        }
-
-        #irwWrapper .grievance-tracker_button {
-            margin-top: 25px;
+            .grievance-tracker_button {
+                margin-top: 25px;
+            }
         }
 
         .what_how_where {
@@ -262,50 +266,53 @@
             }
         }
 
-    }
+        .implementation-satellite {
+            padding: 90px 15px;
+            margin: auto;
+            max-width: 1100px;
 
-    .implementation-satellite {
-        padding: 90px 0px;
-        margin: auto;
-        max-width: 1100px;
+            h2 {
+                padding-bottom: 25px;
+                text-align: left;
+                max-width: 918px;
+            }
+        }
 
-        h2 {
-            padding-bottom: 25px;
+        .reporting-portal {
+            padding: 65px 15px;
+            text-align: center;
+            max-width: 920px;
+            margin: auto;
+
+            h2 {
+                padding-bottom: 25px;
+            }
+
+            .custom-ul {
+                text-align: left;
+            }
+
+            &::after {
+                content: "";
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $grey;
+                z-index: -1;
+            }
+
+            h5 {
+                margin-top: 65px;
+                text-align: left;
+            }
+        }
+
+        .learn-more-link {
+            margin-left: 32px;
             text-align: left;
-            max-width: 918px;
         }
-    }
-
-    .reporting-portal {
-        padding: 65px 0px;
-        text-align: center;
-        max-width: 920px;
-        margin: auto;
-
-        .custom-ul {
-            text-align: left;
-        }
-
-        &::after {
-            content: "";
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            background: $grey;
-            z-index: 0;
-        }
-
-        h5 {
-            margin-top: 65px;
-            text-align: left;
-        }
-    }
-
-    .learn-more-link {
-        margin-left: 32px;
-        text-align: left;
     }
 }
 
