@@ -260,6 +260,67 @@ $xl: 1200px;
         }
     }
 
+    // refactored .tbl-goals during feedback - lines up goal with progress
+    #irwWrapper table.table-goals {
+        margin: 50px 0;
+        border: 1px solid $blue;
+        background-color: $white;
+
+        th {
+            background-color: #003da6;
+            color: #ffffff;
+            font-size: 24px;
+            padding: 0.8rem 1rem;
+            text-align: center;
+            font-weight: 600;
+            width: 50%;
+
+            &:not(:first-child) {
+                border-left: 1px solid $white;
+            }
+        }
+
+        td {
+            padding: 1rem 1rem 1rem 3rem;
+            vertical-align: top;
+            position: relative;
+            &::before {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-size: 1.75em;
+                content: "\f105";
+                color: $blue;
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+            }
+            &:not(:first-child) {
+                border-left: 1px solid $blue;
+            }
+            
+        }
+
+        tr:not(:first-child) {
+            td {
+                padding-top: 0;
+                &::before {
+                    top: 0;
+                }
+            }
+        }
+
+        @media (max-width: $sm) {
+            th {
+                font-size: 18px;
+            }
+        }
+    }
+
     &_environmental {
         .esg_nav .esg_nav-item {
             background-color: $green;
