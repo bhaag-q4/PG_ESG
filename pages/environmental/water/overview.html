@@ -163,18 +163,18 @@
         <div class="container mg50 container--small">
             <div class="row">
                 <div class="col-xs-12 col-md-4">
-                    <a href="" class="btn-square">Product Innovation</a>
+                    <div class="blue-box"><a href="#product_innovation" class="btn-square">Product Innovation</a></div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <a href="" class="btn-square">Consumer education</a>
+                    <div class="blue-box"><a href="#consumer_education" class="btn-square">Consumer education</a></div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <a href="" class="btn-square">Collaboration to help transform the way water is used in homes</a>
+                    <div class="blue-box"><a href="#collaboration" class="btn-square">Collaboration to help transform the way water is used in homes</a></div>
                 </div>
             </div>
         </div>
         <div class="container container--small">
-            <div class="row mg50 product-innovation">
+            <div class="row mg50 product-innovation module-product_innovation">
                 <div class="col-xs-12">
                     <h2 class="esg-module-title text-left">Product Innovation</h2>
                 </div>
@@ -209,7 +209,7 @@
             </div>
 
             <!-- consumer education -->
-            <div class="row mg50 collaboration">
+            <div class="row mg50 collaboration module-consumer_education">
                 <div class="col-xs-12">
                     <h2 class="esg-module-title text-left">Consumer Education</h2>
                 </div>
@@ -226,7 +226,7 @@
                </div>
             </div>
             <!-- collaboration -->
-            <div class="row mg50 collaboration">
+            <div class="row mg50 collaboration module-collaboration">
                 <div class="col-xs-12">
                     <h2 class="esg-module-title text-left">Collaboration: The 50L Home Coalition</h2>
                 </div>
@@ -275,8 +275,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-md-8">
-                    <div role="table" class="basin-tbl">
+                <div class="col-xs-12 col-md-7 col-md-push-1">
+                    <!-- <div role="table" class="basin-tbl">
                         <div role="row" class="basin-tbl__row">
                             <div role="cell" class="basin-tbl__head">Country</div>
                             <div role="cell" class="basin-tbl__head"># Priority Basins</div>
@@ -287,6 +287,59 @@
                             <div role="cell" class="basin-tbl__value--blue">3</div>
                             <div role="cell" class="basin-tbl__value">Xuanhui He Hai He Delta Tuo Jiang</div>
                         </div>
+                    </div> -->
+                    <div class="tbl-wrapper">
+                        <table class="tbl tbl-basins table">
+                            <colgroup>
+                                <col class="col-xs-4">
+                                <col class="col-xs-4">
+                                <col class="col-xs-4">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th># Priority Basins</th>
+                                    <th>Priority Basin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>China</td>
+                                    <td>3</td>
+                                    <td>Xuanhui He Hai He Delta Tuo Jiang</td>
+                                </tr>
+                                <tr>
+                                    <td>Mexico</td>
+                                    <td>3</td>
+                                    <td>Moctezuma Laja Lerma/Salamanca</td>
+                                </tr>
+                                <tr>
+                                    <td>USA</td>
+                                    <td>5</td>
+                                    <td>Lower Bear/Malad, Great Salt Lake, Lower American, Lower Sacramento/Putah, Calleguas</td>
+                                </tr>
+                                <tr>
+                                    <td>India</td>
+                                    <td>3</td>
+                                    <td>Sutlej <br>Yamuna 1 <br>Musi/Aler</td>
+                                </tr>
+                                <tr>
+                                    <td>Saudi Arabia</td>
+                                    <td>2</td>
+                                    <td>Saudi Arabia West Coast 5 Persian Gulf Western Coast 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Spain</td>
+                                    <td>1</td>
+                                    <td>Segura</td>
+                                </tr>
+                                <tr>
+                                    <td>Turkey</td>
+                                    <td>1</td>
+                                    <td>Kocaeli</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -361,6 +414,37 @@ $(function() {
                 $(this).find('span.fa').attr('class', 'fa fa-chevron-down');
             }
         });
+    });
+
+    function eqHeight(elemCls) {
+        var $elem = $(elemCls),
+            tallest = 0;
+
+        $elem.each(function() {
+            if($(this).height() > tallest) {
+                tallest = $(this).height();
+            }
+        });
+
+        $elem.css('height', tallest);
+    }
+
+    var winWidth = $(window).width(), winHeight = $(window).height();
+
+    $(window).on('resize', function() {
+        if($(window).width() != winWidth || $(window).height() != winHeight){
+            $('.blue-boxes .blue-box').css('height', 'auto');
+            eqHeight('.blue-boxes .blue-box');
+        }
+    })
+
+    eqHeight('.blue-box');
+
+    $('.blue-box').on('click', 'a[href*="#"]', function (e) {
+        var hash = $(this).attr('href').split('#')[1];
+        e.preventDefault();
+        window.location.hash = hash;
+        q4App.scrollTo($('.module-' + hash));
     });
 });
 </script>
