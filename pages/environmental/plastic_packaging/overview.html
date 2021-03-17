@@ -59,19 +59,19 @@
         <div class="col-xs-12">
             <div class="section-links">
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_efforts">
                         <img src="/files/images/esg/plastic-packaging-link-box_1.png" aria-hidden="true">
                         <span class="link-text">P&G Efforts</span>
                     </a>
                 </div>
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_goals">
                         <img src="/files/images/esg/plastic-packaging-link-box_2.png" aria-hidden="true">
                         <span class="link-text">Goals</span>
                     </a>
                 </div>
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_metrics">
                         <img src="/files/images/esg/plastic-packaging-link-box_3.png" aria-hidden="true">
                         <span class="link-text">Data & Metrics</span>
                     </a>
@@ -83,19 +83,19 @@
         <div class="col-xs-12">
             <div class="section-links">
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_partnerships">
                         <img src="/files/images/esg/plastic-packaging-link-box_4.png" aria-hidden="true">
                         <span class="link-text">Partnerships & <br>Programs</span>
                     </a>
                 </div>
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_perspectives">
                         <img src="/files/images/esg/plastic-packaging-link-box_5.png" aria-hidden="true">
                         <span class="link-text">P&G <br>Perspectives</span>
                     </a>
                 </div>
                 <div class="section-link">
-                    <a href="#">
+                    <a href="#plastic_packaging_references">
                         <img src="/files/images/esg/plastic-packaging-link-box_6.png" aria-hidden="true">
                         <span class="link-text">Additional <br>References</span>
                     </a>
@@ -345,6 +345,13 @@
         })
 
         eqHeight('.blue-boxes .blue-box');
+
+        $('.section-links .section-link').on('click', 'a[href*="#"]', function (e) {
+                hash = $(this).attr('href').split('#')[1];
+                e.preventDefault();
+                window.location.hash = hash;
+                q4App.scrollTo($('.module-' + hash));
+        });
     });
 
 
