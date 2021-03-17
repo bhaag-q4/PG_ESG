@@ -36,14 +36,42 @@
             padding: 0 10px;
         }
      }
+
+     @media (max-width: $lg) {
+        flex-direction: column;
+        align-items: center;
+
+        .module-navbar__link + .module-navbar__link {
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+     }
 }
 
-.module-overview {
+#irwWrapper .module-overview {
     background: #E1F4F8;
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    &::after {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        background: #E1F4F8;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+    }
+
 
     &__water-reduction,
     &__water-reduction-home,
-    &__water-conserving-basins {
+    &__water-conserving-basins,
+    &__providing-clean-water {
         background: $white;
         padding: 25px 0 !important;
         margin: 50px auto !important;
@@ -80,16 +108,27 @@
         margin-top: 40px;
     }
 
-    .btn-square {
+    .blue-box {
         background: $blue !important;
-        color: $white !important;
-        padding: 37px 67px;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: center;
-        text-transform: uppercase;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.171957);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0;
+        
+        .btn-square {
+            color: $white !important;
+            padding: 1.5rem;
+            display: block;
+            // padding: 37px 67px;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
     }
+
 
     p.water-home-text {
         margin: 42px 0 61px 0 !important;
@@ -112,25 +151,62 @@
         line-height: 18px;    
     }
 
-    .basin-tbl {
-        color: $green !important;
-        &__row {
-            display: flex;
-            justify-content: space-evenly;
+    // .basin-tbl {
+    //     color: $green !important;
+    //     &__row {
+    //         display: flex;
+    //         justify-content: space-evenly;
+    //     }
+    //     &__head {
+    //         font-weight: 600;
+    //         font-size: 16px;
+    //         line-height: 26px;
+    //     }
+    //     &__value {
+    //         font-size: 14px;
+    //         line-height: 17px;
+    //         &--blue {
+    //             font-weight: bold;
+    //             color: $blue;
+    //         }
+    //     }
+    // }
+
+    .tbl-wrapper > .tbl {
+        > tbody > tr > th,
+        > tbody > tr > td {
+            padding: 12px 8px;
         }
-        &__head {
-            font-weight: 600;
-            font-size: 16px;
+
+
+        > thead > tr > th {
+            color: $green;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid $grey--mid;
+            vertical-align: top;
+            // font-size: 24px;
             line-height: 26px;
         }
-        &__value {
-            font-size: 14px;
-            line-height: 17px;
-            &--blue {
-                font-weight: bold;
+
+
+        > tbody > tr > td {
+            color: $green;
+            border-top: none;
+            border-bottom: 1px solid $grey--mid;
+            // font-weight: 700;
+            &:nth-child(2) {
                 color: $blue;
+                // font-size: 0.8em;
+                font-weight: 700;
             }
         }
+
+        > tfoot > tr > td {
+            padding-top: 1.5rem;
+            font-size: 13px;
+        }
+        
     }
 
     .accordion {
@@ -158,5 +234,16 @@
             }
         }
     }
+    @media (max-width: $lg) {
+        padding-right: 20px;
+        padding-left: 20px;
 
+        &__water-reduction,
+        &__water-reduction-home,
+        &__water-conserving-basins,
+        &__providing-clean-water {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+    }
 }
