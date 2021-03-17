@@ -58,8 +58,17 @@
 
     // 3.2 Advocating for Social Justice
     .module_advocating_social {
+
+        .module_advocating_social-subtitle {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 26px;
+            text-align: center;
+            color: #003DA7;
+        }
+
         .social-advocacy-section {
-            max-width: 1100px;
+            max-width: 1125px;
             margin: auto;
             padding: 70px 10px;
         }
@@ -88,6 +97,17 @@
             font-size: 16px;
             line-height: 26px;
         }
+
+        .people_with_disabilities::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $grey;
+            z-index: 0;
+        }
     }
 
     // 3.3 Policies and Practices
@@ -98,9 +118,10 @@
         position: relative;
 
         .policies-box_box {
-            border: 1px solid $black;
+            border: 1px solid #979797;
             padding: 19px 26px;
             margin-bottom: 25px;
+            border-radius: 5px;
         }
 
         @media (max-width: $sm) {
@@ -135,3 +156,5 @@
 .PageESGSocialAdvocatingforSocialJustice #irwWrapper {
     padding: 0px;
 }
+
+

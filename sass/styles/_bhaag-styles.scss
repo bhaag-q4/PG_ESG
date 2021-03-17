@@ -1,3 +1,10 @@
+@media (min-width: 1200px) {
+    .page-header .navigation #global-navigation-header > .navigation__group-items > .navigation__group:nth-child(2) {
+        margin-right: 3.5rem;
+        margin-left: 3.5rem;
+    }
+}
+
 #irwWrapper {
     .esg_overview {
         .summary-section {
@@ -6,22 +13,19 @@
             margin-bottom: 60px;
         }
 
-        .summary-section .col-xs-12.col-md-6:first-child {
-            border-right: 1.5px solid $blue;
+        @media (min-width: $md) {
+            .summary-section .col-xs-12.col-md-6:first-child {
+                border-right: 1.5px solid $blue;
+            }
+
+            .citizen_house-board_item.col-xs-12.col-sm-6:first-child {
+                border-right: 1.5px solid #C4C4C4;
+            }
         }
+
         .message_ceo {
             max-width: 1100px;
             margin: auto;
-
-            .section-title {
-                font-weight: 900;
-                font-size: 34px;
-                line-height: 50px;
-                text-align: center;
-                text-transform: uppercase;
-                color: $blue;
-                margin-top: 0;
-            }
 
             .message_ceo-name {
                 font-weight: 600;
@@ -70,16 +74,6 @@
         }
 
         .frameworks_reports {
-            .section-title {
-                font-weight: 900;
-                font-size: 34px;
-                line-height: 50px;
-                text-align: center;
-                text-transform: uppercase;
-                color: $blue;
-                margin-top: 0;
-            }
-
             .frameworks_reports-arrow {
                 position: absolute;
                 color: $blue;
@@ -89,11 +83,16 @@
             .frameworks_reports-list p {
                 margin-left: 20px;
                 display: inline-block;
-                padding-bottom: 30px;
+                padding-bottom: 0px;
                 font-weight: 900;
                 font-size: 20px;
                 text-transform: uppercase;
                 color: $blue;
+            }
+
+            .frameworks_reports-list_item {
+                display: block;
+                margin-bottom: 60px;
             }
 
             .frameworks_reports-list_container {
@@ -173,6 +172,17 @@
                 line-height: 26px;
                 text-align: center;
             }
+        }
+
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $blue--light;
+            z-index: 0;
         }
     }
 

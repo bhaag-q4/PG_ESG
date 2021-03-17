@@ -170,7 +170,8 @@
         }
     }
     &_goals {
-        padding: 4rem 0 6rem;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
         .esg-module-title {
             margin-bottom: 1.5em;
         }
@@ -196,6 +197,7 @@
     }
 
     &_data {
+        margin-top: 4rem;
         .text-center > h4 {
             max-width: 100%;
             margin-bottom: 1.5em;
@@ -225,12 +227,16 @@
 
             &:first-child {
                 color: $green;
-                font-size: 0.8em;
+                // font-size: 0.8em;
             }
 
             &:nth-child(2) {
                 font-weight: 700;
             }
+        }
+
+        .btn {
+            margin-top: 4rem;
         }
     }
 }
@@ -329,7 +335,7 @@
                 font-weight: 700;
                 &:first-child {
                     color: $green;
-                    font-size: 0.8em;
+                    // font-size: 0.8em;
                     font-weight: 400;
                 }
                 &:nth-child(n+3):nth-child(-n+4) {
@@ -382,7 +388,8 @@
         }
     }
     &_scope_1_2 {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         h4 {
             margin-bottom: 1em;
         }
@@ -478,7 +485,8 @@
         }
     }
     &_scope_3 {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         .esg-module-title {
             text-align: left;
         }
@@ -554,7 +562,7 @@
     }
 
     &_intro {
-        padding: 0 0 6rem 0;
+        padding-bottom: 6rem;
         h4 {
             margin-bottom: 1.25em;
         }
@@ -589,7 +597,8 @@
     }
 
     &_ingredients {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title {
             max-width: 700px;
@@ -606,14 +615,16 @@
     }
 
     &_sales {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         h4 {
             margin-top: 0;
         }
     }
 
     &_approach {
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         .esg-module-title {
             max-width: 1000px;
@@ -627,6 +638,11 @@
         .section-link {
             max-width: 245px;
 
+            a {
+                position: relative;
+                display: block;
+            }
+
             & + .section-link {
                 margin-left: 1.5rem !important;
             }
@@ -639,7 +655,7 @@
     }
 
     &_milestones {
-        padding: 4rem 0 0;
+        padding-top: 4rem;
         position: relative;
         // bring light blue bg to behind footer
         &::after {
@@ -668,6 +684,94 @@
 
         .btn-default {
             margin: 2em 0 1.5em;
+        }
+    }
+}
+
+#irwWrapper .module-responsible_sourcing {
+    img {
+        max-width: 100%;
+    }
+    .btn {
+        margin-top: 2em;
+    }
+    &_intro {
+        padding-bottom: 6rem;
+        .esg-module-title.align-left {
+            text-align: left;
+        }
+        h4 {
+            margin-bottom: 2em;
+        }
+        
+    }
+
+    &_commitment {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .esg-module-title,
+        .text-center {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .custom-ul {
+            text-align: left;
+            max-width: 600px;
+            margin: 1.5em auto 2em;
+        }
+
+        .learn-more p {
+            max-width: 325px;
+            @media screen and (max-width: $md) {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    &_goals {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .esg-module-title,
+        h4 {
+            max-width: 550px;
+        }
+        .esg-module-title {
+            text-align: left;
+        }
+
+        .small-text {
+            font-size: 0.9em;
+        }
+
+        .row + .row {
+            margin-top: 3rem;
+        }
+    }
+
+    &_transparency {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            background: $blue--light;
+            z-index: 0;
+        }
+
+        h5:not(:first-child) {
+            margin-top: 1.5em;
         }
     }
 }

@@ -43,6 +43,32 @@ $xl: 1200px;
 
 // common elements
 .section--esg {
+
+    .esg--hidden {
+        display: none;
+    }
+
+    .hero-ir-inner-page {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            color: #fff;
+            font-size: 72px;
+            line-height: 1.2;
+            top: 40%;
+            transform: translateY(-50%);
+            width: 100%;
+
+            @media (max-width: $lg) {
+                font-size: 56px;
+            }
+            @media (max-width: $sm) {
+                font-size: 28px;
+            }
+        }
+    }
+
     #irwWrapper {
         padding-left: 0;
         padding-right: 0;
@@ -54,12 +80,23 @@ $xl: 1200px;
         font-size: 24px;
         line-height: 26px;
         margin-top: 28px;
+
+        a {
+            text-decoration: underline;
+        }
     }
 
     #irwWrapper .text-center h4 {
         max-width: 900px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    #irwWrapper h5 {
+        color: $blue;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
     }
 
     #irwWrapper .title--arrow {
@@ -96,6 +133,13 @@ $xl: 1200px;
 
     }
 
+    #irwWrapper .learn-more-link {
+        font-weight: 600;
+        font-size: 0.85em;
+        display: block;
+        margin-top: 1em;
+    }
+
     #irwWrapper .custom-ul {
         padding: 0;
         margin: 0 0 1em;
@@ -111,7 +155,7 @@ $xl: 1200px;
                 -webkit-font-smoothing: antialiased;
                 font-family: FontAwesome;
                 font-weight: normal;
-                font-size: 1.25em;
+                font-size: 1.75em;
                 content: "\f105";
                 color: $blue;
                 position: absolute;
@@ -186,6 +230,7 @@ $xl: 1200px;
             font-size: 24px;
             padding: 0.8rem 1rem;
             text-align: center;
+            font-weight: 600;
         }
         &_value {
             padding: 1rem;
@@ -210,4 +255,24 @@ $xl: 1200px;
             }
         }
     }
+
+    &_environmental {
+        .esg_nav .esg_nav-item {
+            background-color: $green;
+            &--active {
+                background-color: $blue2;
+            }
+
+            // hide overview page
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+//for images to be centerd when mobile
+#irwWrapper .image-container img {
+    margin: auto;
+    display: block;
 }
