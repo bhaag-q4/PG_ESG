@@ -499,6 +499,10 @@
     }
 
     .module-pulp {
+
+        p a, .custom-ul a {
+            font-weight: 600;
+        }
         .custom-ul {
             margin: 0 0px 1em 30px;
         }
