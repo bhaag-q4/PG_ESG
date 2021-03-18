@@ -202,7 +202,7 @@
                 padding-bottom: 55px;
             }
 
-            .board-composition-summary_chart {
+            .board-composition-summary_chart-item {
                 flex-basis: 20%;
                 text-align: center;
             }
@@ -212,7 +212,7 @@
             }
 
             @media (max-width: $md) {
-                .board-composition-summary_chart {
+                .board-composition-summary_chart-item {
                     flex-basis: 33.3333%;
                 }
             }

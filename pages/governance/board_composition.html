@@ -11,34 +11,46 @@
             experience that informs their leadership and strengthens their oversight.
         </div>
         <div class="board-composition-summary_chart-section">
-            <div class="board-composition-summary_chart">
-                <img src="/files/images/esg/6_12_graph.svg" alt="6 out of 12">
-                <p class="board-composition-summary_ratio"><strong>6/12 (50%)</strong></p>
-                <p>Members are women</p>
+            <div class="board-composition-summary_chart-item">
+                <div id="chart_gender" class="board-composition-summary_chart">
+                </div>
+                <p class="board-composition-summary_ratio"><strong>6/13 (46%)</strong></p>
+                <p>Directors are women</p>
             </div>
-            <div class="board-composition-summary_chart">
-                <img src="/files/images/esg/3_12_graph.svg" alt="3 out of 12">
-                <p class="board-composition-summary_ratio"><strong>3/12 (25%)</strong></p>
-                <p>members are ethnically diverse</p>
+
+            <div class="board-composition-summary_chart-item">
+                <div id="chart_ethnicity" class="board-composition-summary_chart">
+                </div>
+                <p class="board-composition-summary_ratio"><strong>4/13 (31%)</strong></p>
+                <p>Directors are racially/thnically diverse</p>
             </div>
-            <div class="board-composition-summary_chart">
-                <img src="/files/images/esg/7_12_graph.svg" alt="7 out of 12">
-                <p class="board-composition-summary_ratio"><strong>7/12 (58%)</strong></p>
-                <p> members have served fewer than six years, with average tenure of about seven years</p>
+
+            <div class="board-composition-summary_chart-item">
+                <div id="chart_less-than-six" class="board-composition-summary_chart">
+                </div>
+                <p class="board-composition-summary_ratio"><strong>7/13 (54%)</strong></p>
+                <p> Directors have served fewer than six years, with average tenure of less than seven years</p>
             </div>
-            <div class="board-composition-summary_chart">
-                <img src="/files/images/esg/4_12_graph.svg" alt="4 out of 12">
-                <p class="board-composition-summary_ratio"><strong>4/12 (33%)</strong></p>
-                <p>members joined within the last three years</p>
+
+            <div class="board-composition-summary_chart-item">
+                <div id="chart_less-than-four"  class="board-composition-summary_chart">
+                </div>
+                <p class="board-composition-summary_ratio"><strong>5/6 (83%)</strong></p>
+                <p>Directors added in the last four years were women or racially/ethnically diverse</p>
             </div>
-            <div class="board-composition-summary_chart">
-                <img src="/files/images/esg/8_12_graph.svg" alt="8 out of 12">
-                <p class="board-composition-summary_ratio"><strong>8/12 (67%)</strong></p>
-                <p>members are current or former public company CEOs</p>
+
+            <div class="board-composition-summary_chart-item">
+                <div id="chart_ceo"  class="board-composition-summary_chart">
+                </div>
+                <p class="board-composition-summary_ratio"><strong>8/13 (62%)</strong></p>
+                <p>Directors are current or former public company CEOs</p>
             </div>
         </div>
         <div class="board-composition-summary_read-more-container">
-            <a class="board-composition-summary_read-more btn btn-default">You can read more about our current Directors here</a>
+            <a href="https://us.pg.com/structure-and-governance/board-of-directors-composition/" target="_blank"
+                class="board-composition-summary_read-more btn btn-default">You can read more about our current
+                Directors
+                here</a>
         </div>
     </div>
 
@@ -49,8 +61,10 @@
             </div>
             <div class="board-leadership_blurb">
                 <p>
-                    The Company’s Board retains discretion to determine whether the same individual should serve as both
-                    Chief Executive Officer (“CEO”) and Chairman of the Board or whether the roles should be separated.
+                    The Company’s Board retains discretion to determine whether the same individual should serve as
+                    both
+                    Chief Executive Officer (“CEO”) and Chairman of the Board or whether the roles should be
+                    separated.
                     This
                     approach allows the Board to use its considerable experience and knowledge to elect the most
                     qualified
@@ -59,7 +73,8 @@
                     and CEO roles when appropriate, as the roles have been in previous periods.
                 </p>
                 <p>
-                    The Board regularly considers this discretionary structure and whether to combine or separate the
+                    The Board regularly considers this discretionary structure and whether to combine or separate
+                    the
                     roles,
                     depending on which leadership structure best serves the Company and its shareholders. The Board
                     believes
@@ -68,11 +83,13 @@
                     it to promote the long-term interests of the Company and its shareholders.
                 </p>
                 <p class="board-leadership_blurb--blue">
-                    When the Board determines that the same individual should hold the positions of CEO and Chairman of
+                    When the Board determines that the same individual should hold the positions of CEO and Chairman
+                    of
                     the
                     Board or if the Chairman of the Board is not independent, the independent Directors of the Board
                     elect
-                    for an annual term a Lead Director from among the independent Directors. The Lead Director role is
+                    for an annual term a Lead Director from among the independent Directors. The Lead Director role
+                    is
                     significant, with responsibilities consistent with accepted best practices, including:
                 </p>
             </div>
@@ -133,3 +150,138 @@
 
     document.getElementById('board-leadership_responsibilities-container').innerHTML = rendered;
 </script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+    var chartData = [{
+            id: "#chart_gender",
+            data: [{
+                    name: 'light-green',
+                    y: 7
+                },
+                {
+                    name: 'dark-green',
+                    y: 6
+                }
+            ]
+        },
+
+        {
+            id: "#chart_ethnicity",
+            data: [{
+                    name: 'light-green',
+                    y: 9
+                },
+                {
+                    name: 'dark-green',
+                    y: 4
+                }
+            ]
+        },
+
+        {
+            id: "#chart_less-than-six",
+            data: [{
+                    name: 'light-green',
+                    y: 6
+                },
+                {
+                    name: 'dark-green',
+                    y: 7
+                }
+            ]
+        },
+
+        {
+            id: "#chart_less-than-four",
+            data: [{
+                    name: 'light-green',
+                    y: 1
+                },
+                {
+                    name: 'dark-green',
+                    y: 5
+                }
+            ]
+        },
+
+        {
+            id: "#chart_ceo",
+            data: [{
+                    name: 'light-green',
+                    y: 5
+                },
+                {
+                    name: 'dark-green',
+                    y: 8
+                }
+            ]
+        },
+    ];
+
+    // Create the chart
+    $.each(chartData, function (i, chartDatum) {
+        $(chartDatum.id).highcharts({
+            chart: {
+                type: 'pie',
+                height: 175
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: undefined,
+                align: 'left',
+                style: {
+                    "color": "#0054A4",
+                    "fontSize": "14px"
+                }
+            },
+            legend: {
+                enabled: false,
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%'],
+                    borderWidth: 0
+                },
+                series: {
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true,
+                    enableMouseTracking: false,
+                    states: {
+                        inactive: {
+                            opacity: 1
+                        }
+                    },
+                    events: {
+                        legendItemClick: function () {
+                            return false;
+                        }
+                    },
+                }
+            },
+            series: [{
+                name: 'Tenure',
+                colors: ['#3AC05F', '#246D38'],
+                data: chartDatum.data,
+                size: '100%',
+                innerSize: '60%',
+                id: 'tenure'
+            }]
+        });
+
+    });
+</script>
+
+<style>
+    #diversity-charts_gender-racial-diversity .highcharts-legend,
+    #diversity-charts_tenure .highcharts-legend,
+    #diversity-charts_independence .highcharts-legend {
+        pointer-events: none !important;
+    }
+</style>
