@@ -19,8 +19,8 @@
 
 <!-- navbar -->
 <div class="container module-navbar">
-    <a href="/esg/environmental/water" class="module-navbar__link overview"><img
-            src="/files/images/esg/overview.png"><span>Overview of P&G Efforts</span></a>
+    <a href="#overview" class="module-navbar__link overview"><img
+            src="/files/images/esg/overview.png"><span>Overview of <br>P&G Efforts</span></a>
     <a href="/esg/environmental/water/progress-vs-goals/" class="module-navbar__link progress-vs-goals"><img
             src="/files/images/esg/progress-vs-goals.png"><span>Progress vs. Goals</span></a>
     <a href="/esg/environmental/water/data-metrics" class="module-navbar__link data-and-metrics"><img
@@ -440,7 +440,7 @@ $(function() {
 
     eqHeight('.blue-box');
 
-    $('.blue-box').on('click', 'a[href*="#"]', function (e) {
+    $('.blue-box, .module-navbar').on('click', 'a[href*="#"]', function (e) {
         var hash = $(this).attr('href').split('#')[1];
         e.preventDefault();
         window.location.hash = hash;
