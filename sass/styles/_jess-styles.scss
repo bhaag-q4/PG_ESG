@@ -962,3 +962,19 @@
         }
     }
 }
+#irwWrapper .module-palm_oil_benefits {
+    &_content {
+        h4 {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .custom-ul {
+            color: $blue;
+        }
+    }
+
+    &_return {
+        padding-top: 6rem;
+    }
+}
