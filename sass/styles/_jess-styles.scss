@@ -751,6 +751,14 @@
         .row + .row {
             margin-top: 3rem;
         }
+
+        @media (max-width: $lg) {
+            h5 {
+                margin-top: 2rem;
+            }
+        }
+
+
     }
 
     &_transparency {
@@ -770,8 +778,11 @@
             z-index: 0;
         }
 
-        h5:not(:first-child) {
-            margin-top: 1.5em;
+        h5 {
+            margin-bottom: 0.5em;
+            &:not(:first-child) {
+                margin-top: 1.5em;
+            }
         }
     }
 }
