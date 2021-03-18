@@ -624,7 +624,7 @@
         }
 
         .module-pulp_data-table-toggles {
-            padding-bottom: 20px;
+            padding-bottom: 0px;
             text-align: center;
 
             .btn.btn-default.selected {
@@ -632,6 +632,11 @@
                 background-color: $blue;
             }
         }
+
+        #north-american {
+            display: none;
+        }
+        
         .module-pulp_data-table-container {
             img {
                 width: 100%;
