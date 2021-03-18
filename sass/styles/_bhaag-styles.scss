@@ -495,8 +495,12 @@
             margin: 0 0px 1em 30px;
         }
 
+        li > .custom-ul {
+            margin-top: 15px;
+        }
+
         .custom-ordered-list {
-            padding-left: 25px;
+            padding: 0 45px;
         }
 
         .btn.btn-default {
