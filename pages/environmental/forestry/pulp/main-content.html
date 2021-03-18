@@ -21,7 +21,7 @@
         <div class="container module-pulp_efforts white-background">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="esg-module-title">P&G Efforts.</h2>
+                    <h2 class="esg-module-title">P&G Efforts</h2>
                     <!-- accordion -->
                     <div role="accordion" class="accordion">
                         <div class="accordion__panel">
@@ -320,7 +320,7 @@
 
                 </div>
                 <div class="text-center">
-                    <a href="" class="btn btn-default btn_to-top">Back to Top</a>
+                    <button href="" class="btn btn-default btn_to-top">Back to Top</button>
                 </div>
             </div>
         </div>
@@ -330,7 +330,7 @@
         <div class="container module-pulp_progress white-background">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="esg-module-title">Progress & Goals.</h2>
+                    <h2 class="esg-module-title">Progress & Goals</h2>
                     <div class="pulp_progress-table row">
                         <div class="col-xs-12 col-lg-4">
                             <h3 class="pulp_progress-title">
@@ -383,13 +383,13 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="" class="btn btn-default btn_to-top">Back to Top</a>
+                        <button href="" class="btn btn-default btn_to-top">Back to Top</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="blue-light-background">
+    <div class="blue-light-background blue-light-background--last">
 
         <div class="container module-pulp_data white-background">
             <div class="row">
@@ -603,7 +603,7 @@
                         </div> -->
                     </div>
                     <div class="text-center">
-                        <a href="" class="btn btn-default btn_to-top">Back to Top</a>
+                        <button href="" class="btn btn-default btn_to-top">Back to Top</button>
                     </div>
                 </div>
             </div>
@@ -614,7 +614,7 @@
     <div class="container module-pulp_perspectives">
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="esg-module-title">P&G Perspectives.</h2>
+                <h2 class="esg-module-title">P&G Perspectives</h2>
 
                 <div role="accordion" class="accordion">
 
@@ -955,9 +955,27 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="" class="btn btn-default">Return to Forestry Overview</a>
+                    <a href="/esg/environmental/forestry" class="btn btn-default">Return to Forestry Overview</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $('.module-pulp_data-table-toggles .btn').on('click', function (e) {
+        e.preventDefault();
+    })
+
+    $(function() {
+        var btn = $('.btn_to-top');
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+
+    });
+</script>

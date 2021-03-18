@@ -496,7 +496,10 @@
         }
 
         .blue-light-background {
-            padding: 80px 0 50px;
+            padding: 80px 0 0px;
+            &.blue-light-background--last {
+                padding-bottom: 80px;
+            }
         }
 
         .accordion__panel-content.panel__content--active {
@@ -518,6 +521,10 @@
         .white-background {
             max-width: 1100px;
             padding: 20px 100px 60px;
+
+            @media (max-width: $md){
+                padding: 20px 25px 60px;
+            }
         }
 
         .module-pulp_efforts,
@@ -582,6 +589,10 @@
         .module-pulp_data-table-toggles {
             padding-bottom: 20px;
             text-align: center;
+
+            .btn.btn-default {
+                margin-bottom: 15px;
+            }
 
             .btn.btn-default.selected {
                 color: white;
