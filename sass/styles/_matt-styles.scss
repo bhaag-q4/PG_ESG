@@ -48,6 +48,27 @@
      }
 }
 
+#irwWrapper .module-water_jump_links {
+    .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .btn {
+            margin: 0.5em;
+            white-space: normal;
+        }
+
+        @media (max-width: $md) {
+            flex-direction: column;
+            .btn {
+                margin: 0.5em 0;
+            }
+        }
+    }
+}
+
 #irwWrapper .module-overview {
     background: #E1F4F8;
     position: relative;
