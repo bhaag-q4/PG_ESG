@@ -495,6 +495,14 @@
             margin: 0 0px 1em 30px;
         }
 
+        .custom-ordered-list {
+            padding-left: 25px;
+        }
+
+        .btn.btn-default {
+            margin-bottom: 15px;
+        }
+
         .blue-light-background {
             padding: 80px 0 0px;
             &.blue-light-background--last {
@@ -589,10 +597,6 @@
         .module-pulp_data-table-toggles {
             padding-bottom: 20px;
             text-align: center;
-
-            .btn.btn-default {
-                margin-bottom: 15px;
-            }
 
             .btn.btn-default.selected {
                 color: white;
