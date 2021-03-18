@@ -200,6 +200,11 @@
     }
 
     .module-compliance-monitoring {
+
+        p a {
+            font-weight: bold;
+        }
+        
         .btn-default {
             margin-top: 25px;
         }
@@ -234,6 +239,10 @@
             padding: 85px 0px;
             margin: auto;
             max-width: 1100px;
+
+            .what_how_where-image {
+                max-width: 100%
+            }
 
             .esg-module-title {
                 text-align: left;
