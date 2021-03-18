@@ -853,6 +853,10 @@
                     margin-bottom: 1rem;
                 }
 
+                p {
+                    padding: 0;
+                }
+
                 p.btn-paragraph .btn {
                     margin-left: 0.8em;
                 }
@@ -961,6 +965,7 @@
         }
     }
 }
+
 #irwWrapper .module-palm_oil_benefits {
     &_content {
         h4 {
