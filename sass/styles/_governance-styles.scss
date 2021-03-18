@@ -2,6 +2,15 @@
     .good-governance {
         margin-bottom: 500px;
 
+        p a,  .shareholder-engagement_blurb a{
+            font-weight: 600;
+
+        }
+
+        a[href^="mailto:"]::before {
+            content: none;
+        }
+
         .debbie-section {
             max-width: 900px;
             margin: auto;
