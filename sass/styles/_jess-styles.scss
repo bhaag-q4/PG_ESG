@@ -415,7 +415,7 @@
             > thead > tr:first-child > th {
                 position: relative;
                 border-bottom: none;
-                font-size: 0.8em;
+                // font-size: 0.8em;
     
                 &:not(:first-child)::after {
                     content: "";
@@ -433,7 +433,7 @@
             }
     
             > thead > tr:last-child > th:nth-child(n+5) {
-                font-size: 0.8em;
+                // font-size: 0.8em;
                 vertical-align: middle;
             }
     
@@ -444,7 +444,7 @@
                 font-weight: 700;
                 &:first-child {
                     color: $green;
-                    font-size: 0.8em;
+                    // font-size: 0.8em;
                     font-weight: 400;
                 }
                 &:nth-child(n+3):nth-child(-n+4) {
@@ -520,7 +520,7 @@
                 font-weight: 700;
                 &:first-child {
                     color: $green;
-                    font-size: 0.8em;
+                    // font-size: 0.8em;
                     font-weight: 400;
                 }
             }
