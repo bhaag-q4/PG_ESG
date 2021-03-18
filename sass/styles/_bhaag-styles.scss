@@ -526,6 +526,23 @@
             padding-bottom: 15px;
         }
 
+        .accordion__panel-content img {
+            max-width: 100%;
+
+            &.pulp-visual {
+                float: right;
+                max-width: 550px;
+            }
+
+            @media (max-width: $lg) {
+                &.pulp-visual {
+                    float: none;
+                    display: block;
+                    margin: 1rem auto;
+                }
+            }
+        }
+
         .accordion__panel {
             margin-bottom: 20px;
         }
